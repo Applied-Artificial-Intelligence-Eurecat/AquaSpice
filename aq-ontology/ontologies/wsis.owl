@@ -1,0 +1,2489 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/def/wsis/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/def/wsis/"
+     versionIRI="https://w3id.org/def/wsis/v0.0.1/">
+    <Prefix name="" IRI="https://w3id.org/def/wsis/"/>
+    <Prefix name="om" IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <Prefix name="sf" IRI="http://www.opengis.net/ont/sf#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="time" IRI="http://www.w3.org/2006/time#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="wsis" IRI="https://w3id.org/def/wsis/"/>
+    <Prefix name="geosp" IRI="http://www.opengis.net/ont/geosparql#"/>
+    <Prefix name="saref" IRI="https://saref.etsi.org/core/"/>
+    <Prefix name="s4city" IRI="https://saref.etsi.org/saref4city/"/>
+    <Prefix name="s4syst" IRI="https://saref.etsi.org/saref4syst/"/>
+    <Prefix name="s4watr" IRI="https://saref.etsi.org/saref4watr/"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Aitor Corchero</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">An ontology as a catalyst for Water Smart Industrial Symbiosis (WSIS), in which water/wastewater plays a key role within a dynamic socio-economic and business oriented industrial ecosystem</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-03-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://opensource.org/licenses/ISC</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2022-03-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <IRI>https://ultimatewater.eu/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+        <IRI>https://github.com/ULTIMATE-DIGITAL-TOOLS/ontology</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Water Smart Industrial Symbiosis (WSIS) Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>wsis</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <Literal>https://w3id.org/def/wsis/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>v0.0.2</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="om:PrefixedGramPerLitre"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="geosp:Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="geosp:Geometry"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="geosp:SpatialObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sf:Point"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sf:Polygon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:Interval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:TemporalDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="time:TemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref:Device"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref:Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref:Property"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4city:Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:BacterialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:MicrobialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:Water"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:WaterFlowProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="s4watr:WaterProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AirProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnergyProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EnvironmentalImpacts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Industry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="IndustryCluster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KeyPerformanceIndicatorLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MacroLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MaterialProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MesoLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MicroLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RawWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceConsumer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceDisposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceProducer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResourceUtilization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Salt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SemiSolidMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolidMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SolutionProvider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WaterProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="geosp:hasGeometry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="geosp:sfContains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="geosp:sfWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:hasMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:isMeasuredIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:isMeasurementOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:makesMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:relatesToMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="saref:relatesToProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:assesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:hasCalculationPeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:hasKPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:isAssessedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:isDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:isKPIOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:quantifiesKPI"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4city:refersToTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4watr:hasPhenomenonTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="canProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="generates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasKPILevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isKPILevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="usesTechnology"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="geosp:asWKT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="saref:hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="saref:hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="saref:hasTimestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="saref:hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="s4city:hasCreationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="s4city:hasExpirationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="s4city:hasLastUpdateDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="om:centidegreeCelsius"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="om:cubicMetrePerYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Aluminium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Ammonium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Cadmium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Chloride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Conductivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Copper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:EscherichiaColi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:FlowRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:FlowTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Iron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Lead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Manganese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Nickel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Nitrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Nitrite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Sodium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Sulphate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:TotalDissolvedSolids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:TotalSuspendedSolids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Turbidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EmissionsProduced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Energy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Material"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OutputEnergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OutputLand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="OutputWaterResource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RecyclingRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="WaterReuse"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="om:PrefixedGramPerLitre"/>
+        <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="geosp:Feature"/>
+        <Class abbreviatedIRI="geosp:SpatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="geosp:Geometry"/>
+        <Class abbreviatedIRI="geosp:SpatialObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sf:Point"/>
+        <Class abbreviatedIRI="geosp:Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sf:Polygon"/>
+        <Class abbreviatedIRI="geosp:Geometry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="time:Instant"/>
+        <Class abbreviatedIRI="time:TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="time:Interval"/>
+        <Class abbreviatedIRI="time:TemporalEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:hasMeasurement"/>
+            <Class abbreviatedIRI="saref:Measurement"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:isMeasuredIn"/>
+            <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:relatesToProperty"/>
+            <Class abbreviatedIRI="saref:Property"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="saref:isMeasuredIn"/>
+            <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="saref:relatesToProperty"/>
+            <Class abbreviatedIRI="saref:Property"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="saref:hasTimestamp"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="saref:hasValue"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Measurement"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="saref:hasValue"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="saref:Property"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:relatesToMeasurement"/>
+            <Class abbreviatedIRI="saref:Measurement"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:hasCalculationPeriod"/>
+            <Class abbreviatedIRI="time:TemporalDuration"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:isKPIOf"/>
+            <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:isMeasuredIn"/>
+            <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:assesses"/>
+            <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:isAssessedBy"/>
+            <Class abbreviatedIRI="s4city:Agent"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:isDerivedFrom"/>
+            <Class abbreviatedIRI="saref:Measurement"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:quantifiesKPI"/>
+            <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="s4city:refersToTime"/>
+            <Class abbreviatedIRI="time:TemporalEntity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="s4city:hasCreationDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="s4city:hasExpirationDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <DataAllValuesFrom>
+            <DataProperty abbreviatedIRI="s4city:hasLastUpdateDate"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicatorAssessment"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="saref:hasValue"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+        <Class abbreviatedIRI="s4watr:WaterProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:BacterialProperty"/>
+        <Class abbreviatedIRI="s4watr:MicrobialProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <Class abbreviatedIRI="s4watr:WaterProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:MicrobialProperty"/>
+        <Class abbreviatedIRI="s4watr:WaterProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:Water"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:Water"/>
+        <Class IRI="Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:Water"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="saref:hasProperty"/>
+            <Class abbreviatedIRI="s4watr:WaterProperty"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:WaterFlowProperty"/>
+        <Class IRI="WaterProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="s4watr:WaterProperty"/>
+        <Class IRI="WaterProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Air"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Air"/>
+        <Class IRI="Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AirProperty"/>
+        <Class abbreviatedIRI="saref:Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Device"/>
+        <Class abbreviatedIRI="saref:Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Energy"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Energy"/>
+        <Class IRI="Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnergyProperty"/>
+        <Class abbreviatedIRI="saref:Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EnvironmentalImpacts"/>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Industry"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Industry"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="hasProcess"/>
+            <Class IRI="Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="IndustryCluster"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="KeyPerformanceIndicatorLevel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="isKPILevel"/>
+            <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MacroLevelIndicator"/>
+        <Class IRI="KeyPerformanceIndicatorLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <Class abbreviatedIRI="saref:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Material"/>
+        <Class IRI="Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaterialProperty"/>
+        <Class abbreviatedIRI="saref:Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MesoLevelIndicator"/>
+        <Class IRI="KeyPerformanceIndicatorLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MicroLevelIndicator"/>
+        <Class IRI="KeyPerformanceIndicatorLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Process"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="usesTechnology"/>
+            <Class IRI="Technology"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RawWater"/>
+        <Class abbreviatedIRI="s4watr:Water"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceConsumer"/>
+        <Class IRI="Industry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceConsumption"/>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceDisposal"/>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceOutput"/>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceProducer"/>
+        <Class IRI="Industry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResourceUtilization"/>
+        <Class abbreviatedIRI="s4city:KeyPerformanceIndicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Salt"/>
+        <Class IRI="Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SemiSolidMaterial"/>
+        <Class IRI="Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolidMaterial"/>
+        <Class IRI="Material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SolutionProvider"/>
+        <Class IRI="Industry"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WaterProperty"/>
+        <Class abbreviatedIRI="saref:Property"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="saref:UnitOfMeasure"/>
+        <NamedIndividual abbreviatedIRI="om:centidegreeCelsius"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Aluminium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Ammonium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Cadmium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Chloride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Conductivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Copper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:BacterialProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:EscherichiaColi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:WaterFlowProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:FlowRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:WaterFlowProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:FlowTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Iron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Lead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Manganese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Nickel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Nitrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Nitrite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Sodium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:ChemicalProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Sulphate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:TotalDissolvedSolids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:TotalSuspendedSolids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="s4watr:AcceptabilityProperty"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Turbidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceDisposal"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceConsumption"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceOutput"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceOutput"/>
+        <NamedIndividual IRI="OutputLand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceOutput"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceOutput"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceUtilization"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceUtilization"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceDisposal"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceDisposal"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceConsumption"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ResourceUtilization"/>
+        <NamedIndividual IRI="WaterReuse"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EmissionsProduced"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Energy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Energy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="EnergyConsumptionIndicator"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+        <NamedIndividual IRI="Energy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+        <NamedIndividual IRI="Energy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputEnergy"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="OutputLand"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="OutputLand"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputLand"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputLand"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputLand"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+        <NamedIndividual IRI="Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+        <NamedIndividual IRI="Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputMainMineralResource"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="OutputWaterResource"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRate"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="RecyclingRateMaterials"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAmountSolidWaste"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Material"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="TotalAountWastewaterDischarge"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterConsumptionIndicator"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isDesignedFor"/>
+        <NamedIndividual IRI="WaterReuse"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="s4watr:isIntendedFor"/>
+        <NamedIndividual IRI="WaterReuse"/>
+        <NamedIndividual abbreviatedIRI="s4watr:Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterReuse"/>
+        <NamedIndividual IRI="MacroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterReuse"/>
+        <NamedIndividual IRI="MesoLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <NamedIndividual IRI="WaterReuse"/>
+        <NamedIndividual IRI="MicroLevelIndicator"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="saref:hasMeasurement"/>
+        <ObjectProperty abbreviatedIRI="saref:isMeasurementOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="s4city:assesses"/>
+        <ObjectProperty abbreviatedIRI="s4city:isAssessedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="s4city:hasKPI"/>
+        <ObjectProperty abbreviatedIRI="s4city:isKPIOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasKPILevel"/>
+        <ObjectProperty IRI="isKPILevel"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isPartOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="usesTechnology"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="s4watr:hasPhenomenonTime"/>
+        <Class abbreviatedIRI="saref:Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="s4watr:hasPhenomenonTime"/>
+        <Class abbreviatedIRI="time:TemporalEntity"/>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="s4city:hasCreationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="s4city:hasExpirationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="s4city:hasLastUpdateDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>geosp:Feature</AbbreviatedIRI>
+        <Literal xml:lang="en">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:Feature</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:Feature</AbbreviatedIRI>
+        <Literal xml:lang="en">Feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>geosp:Geometry</AbbreviatedIRI>
+        <Literal xml:lang="en">The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:Geometry</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:Geometry</AbbreviatedIRI>
+        <Literal xml:lang="en">Geometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:SpatialObject</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:SpatialObject</AbbreviatedIRI>
+        <Literal xml:lang="en">Spatial object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:hasGeometry</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:hasGeometry</AbbreviatedIRI>
+        <Literal xml:lang="en">hasGeometry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:sfContains</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:sfContains</AbbreviatedIRI>
+        <Literal xml:lang="en">sfContains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>geosp:sfWithin</AbbreviatedIRI>
+        <AbbreviatedIRI>geosp:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>geosp:sfWithin</AbbreviatedIRI>
+        <Literal xml:lang="en">sfWithin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>sf:Point</AbbreviatedIRI>
+        <AbbreviatedIRI>sf:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sf:Point</AbbreviatedIRI>
+        <Literal xml:lang="en">Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>sf:Polygon</AbbreviatedIRI>
+        <AbbreviatedIRI>sf:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sf:Polygon</AbbreviatedIRI>
+        <Literal xml:lang="en">Polygon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>time:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">The day of week.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>time:DayOfWeek</AbbreviatedIRI>
+        <AbbreviatedIRI>time:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>time:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">Day of week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>time:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>time:Instant</AbbreviatedIRI>
+        <AbbreviatedIRI>time:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>time:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en">Instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>time:Interval</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with an extent or duration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>time:Interval</AbbreviatedIRI>
+        <AbbreviatedIRI>time:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>time:Interval</AbbreviatedIRI>
+        <Literal xml:lang="en">Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>time:TemporalDuration</AbbreviatedIRI>
+        <Literal xml:lang="en">Time extent; duration of a time interval separate from its particular start position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>time:TemporalDuration</AbbreviatedIRI>
+        <AbbreviatedIRI>time:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>time:TemporalDuration</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>time:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal interval or instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>time:TemporalEntity</AbbreviatedIRI>
+        <AbbreviatedIRI>time:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>time:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:FeatureOfInterest</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>saref:Measurement</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:Measurement</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:Measurement</AbbreviatedIRI>
+        <Literal xml:lang="en">Measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>saref:Property</AbbreviatedIRI>
+        <Literal xml:lang="en">An aspect of an entity that can be observable by a sensor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:Property</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:Property</AbbreviatedIRI>
+        <Literal xml:lang="en">Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>saref:UnitOfMeasure</AbbreviatedIRI>
+        <Literal xml:lang="en">The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called &quot;watt&quot;. Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:UnitOfMeasure</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:UnitOfMeasure</AbbreviatedIRI>
+        <Literal xml:lang="en">Unit of measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasDescription</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasDescription</AbbreviatedIRI>
+        <Literal xml:lang="en">has description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasMeasurement</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasMeasurement</AbbreviatedIRI>
+        <Literal xml:lang="en">has measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasName</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasName</AbbreviatedIRI>
+        <Literal xml:lang="en">has name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasProperty</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasProperty</AbbreviatedIRI>
+        <Literal xml:lang="en">has property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasTimestamp</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasTimestamp</AbbreviatedIRI>
+        <Literal xml:lang="en">has timestamp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:hasValue</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:hasValue</AbbreviatedIRI>
+        <Literal xml:lang="en">has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:isMeasuredIn</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:isMeasuredIn</AbbreviatedIRI>
+        <Literal xml:lang="en">is measured in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:isMeasurementOf</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:isMeasurementOf</AbbreviatedIRI>
+        <Literal xml:lang="en">is measurement of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:relatesToMeasurement</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:relatesToMeasurement</AbbreviatedIRI>
+        <Literal xml:lang="en">relates to measurement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>saref:relatesToProperty</AbbreviatedIRI>
+        <AbbreviatedIRI>saref:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>saref:relatesToProperty</AbbreviatedIRI>
+        <Literal xml:lang="en">relates to property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicator</AbbreviatedIRI>
+        <Literal xml:lang="en">A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicator</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicator</AbbreviatedIRI>
+        <Literal xml:lang="en">Key Performance Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicator</AbbreviatedIRI>
+        <IRI>http://fiware-datamodels.readthedocs.io/en/latest/KeyPerformanceIndicator/doc/spec/index.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicatorAssessment</AbbreviatedIRI>
+        <Literal xml:lang="en">A Key Performance Indicator assessment represents the assessment of a KPI calculated by a given agent in a given time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicatorAssessment</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:KeyPerformanceIndicatorAssessment</AbbreviatedIRI>
+        <Literal xml:lang="en">Key performance indicator assessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:assesses</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:assesses</AbbreviatedIRI>
+        <Literal xml:lang="en">assesses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:hasCalculationPeriod</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:hasCalculationPeriod</AbbreviatedIRI>
+        <Literal xml:lang="en">has calculation period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:hasCreationDate</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:hasCreationDate</AbbreviatedIRI>
+        <Literal xml:lang="en">has creation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:hasExpirationDate</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:hasExpirationDate</AbbreviatedIRI>
+        <Literal xml:lang="en">has expiration date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:hasKPI</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:hasKPI</AbbreviatedIRI>
+        <Literal xml:lang="en">has key performance indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:hasLastUpdateDate</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:hasLastUpdateDate</AbbreviatedIRI>
+        <Literal xml:lang="en">has last update date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:isAssessedBy</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:isAssessedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">is assessed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:isDerivedFrom</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:isDerivedFrom</AbbreviatedIRI>
+        <Literal xml:lang="en">is derived from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:isKPIOf</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:isKPIOf</AbbreviatedIRI>
+        <Literal xml:lang="en">is key performance indicator of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:quantifiesKPI</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:quantifiesKPI</AbbreviatedIRI>
+        <Literal xml:lang="en">quantifies KPI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <AbbreviatedIRI>s4city:refersToTime</AbbreviatedIRI>
+        <AbbreviatedIRI>s4city:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4city:refersToTime</AbbreviatedIRI>
+        <Literal xml:lang="en">refers to time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4watr:Water</AbbreviatedIRI>
+        <Literal xml:lang="en">This class is used to define a particular quantity or body of water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4watr:Water</AbbreviatedIRI>
+        <Literal xml:lang="en">Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4watr:WaterProperty</AbbreviatedIRI>
+        <Literal xml:lang="en">Class to group those properties related to the water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4watr:WaterProperty</AbbreviatedIRI>
+        <Literal xml:lang="en">Water property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4watr:hasPhenomenonTime</AbbreviatedIRI>
+        <Literal xml:lang="en">The time for which the value of a measurement applies to the feature of interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4watr:hasPhenomenonTime</AbbreviatedIRI>
+        <Literal xml:lang="en">has phenomenon time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4watr:isDesignedFor</AbbreviatedIRI>
+        <Literal xml:lang="en">The type of water for which an infrastructure is designed for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4watr:isDesignedFor</AbbreviatedIRI>
+        <Literal xml:lang="en">is designed for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>s4watr:isIntendedFor</AbbreviatedIRI>
+        <Literal xml:lang="en">The intended use of the infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>s4watr:isIntendedFor</AbbreviatedIRI>
+        <Literal xml:lang="en">is intended for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Air</IRI>
+        <Literal xml:lang="en">Air based resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Air</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Air</IRI>
+        <Literal xml:lang="en">Air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AirProperty</IRI>
+        <Literal xml:lang="en">Class to group those properties related to the air resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AirProperty</IRI>
+        <Literal xml:lang="en">Air property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EmissionsProduced</IRI>
+        <Literal xml:lang="en">Indicator related to Emisions Produced (e.g. CO2). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EmissionsProduced</IRI>
+        <Literal xml:lang="en">Emissions Produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Energy</IRI>
+        <Literal xml:lang="en">Energy based resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Energy</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Energy</IRI>
+        <Literal xml:lang="en">Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EnergyConsumptionIndicator</IRI>
+        <Literal xml:lang="en">Indicator related to Energy Consumption per unit key product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnergyConsumptionIndicator</IRI>
+        <Literal xml:lang="en">Energy Consumption Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EnergyProperty</IRI>
+        <Literal xml:lang="en">Class to group those properties related to the energy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnergyProperty</IRI>
+        <Literal xml:lang="en">Energy property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Indicators that refers to economic impacts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Indicators that refers to environmental impacts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Indicators that refers to social impacts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Economic Impacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Environmental Impacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>EnvironmentalImpacts</IRI>
+        <Literal xml:lang="en">Social Impacts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Industry</IRI>
+        <Literal xml:lang="en">An industrial infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Industry</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Industry</IRI>
+        <Literal xml:lang="en">Industry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>IndustryCluster</IRI>
+        <Literal xml:lang="en">Industry Cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>KeyPerformanceIndicatorLevel</IRI>
+        <Literal xml:lang="en">Level of the KPI considering the geographical impact.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>KeyPerformanceIndicatorLevel</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>KeyPerformanceIndicatorLevel</IRI>
+        <Literal xml:lang="en">Key Performance Indicator Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>MacroLevelIndicator</IRI>
+        <Literal xml:lang="en">evaluate, monitor, and improve policies regarding environmental, economic, and/or social concerns.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MacroLevelIndicator</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MacroLevelIndicator</IRI>
+        <Literal xml:lang="en">Macro Level Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Material</IRI>
+        <Literal xml:lang="en">Material based resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Material</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Material</IRI>
+        <Literal xml:lang="en">Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MaterialProperty</IRI>
+        <Literal xml:lang="en">Class to group those properties related to the material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MaterialProperty</IRI>
+        <Literal xml:lang="en">Material property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>MesoLevelIndicator</IRI>
+        <Literal xml:lang="en">Measure physical properties from the technological cycles with full or partial LCT approach, e.g. the indicator Reusability/Recyclability/Recoverability (RRR) in terms of mass includes the potential rate to reuse (products, components), recycle (materials), and recover (energy).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MesoLevelIndicator</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MesoLevelIndicator</IRI>
+        <Literal xml:lang="en">Meso Level Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>MicroLevelIndicator</IRI>
+        <Literal xml:lang="en">The indicators measure gate-to-gate performance from the technological cycles without Life Cycle Thinking approach, e.g. Recycling Rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>MicroLevelIndicator</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MicroLevelIndicator</IRI>
+        <Literal xml:lang="en">Micro Level Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>OutputEnergy</IRI>
+        <Literal xml:lang="en">Indicator related to Output of energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OutputEnergy</IRI>
+        <Literal xml:lang="en">Output Energy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>OutputLand</IRI>
+        <Literal xml:lang="en">Indicator related to Output of Land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OutputLand</IRI>
+        <Literal xml:lang="en">Output Land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>OutputMainMineralResource</IRI>
+        <Literal xml:lang="en">Indicator related to Output of the main mineral reosurce</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OutputMainMineralResource</IRI>
+        <Literal xml:lang="en">Output Main Mineral Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>OutputWaterResource</IRI>
+        <Literal xml:lang="en">Indicator related to Output of Water Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>OutputWaterResource</IRI>
+        <Literal xml:lang="en">Output Water Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Process</IRI>
+        <Literal xml:lang="en">A process that involves the industry operation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Process</IRI>
+        <Literal xml:lang="en">Technology used in the different industrial processes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Process</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Process</IRI>
+        <Literal xml:lang="en">Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Process</IRI>
+        <Literal xml:lang="en">Technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>RawWater</IRI>
+        <Literal xml:lang="en">Raw Water type of water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>RawWater</IRI>
+        <Literal xml:lang="en">Waste Water type of water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>RawWater</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RawWater</IRI>
+        <Literal xml:lang="en">Raw Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RawWater</IRI>
+        <Literal xml:lang="en">Waste Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RecyclingRate</IRI>
+        <Literal xml:lang="en">Indicator related to recycling rate of solid waste or wastewater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RecyclingRate</IRI>
+        <Literal xml:lang="en">Recycling Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RecyclingRateMaterials</IRI>
+        <Literal xml:lang="en">Indicator related to recycling rate of materials. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>RecyclingRateMaterials</IRI>
+        <Literal xml:lang="en">Recycling Rate Materials</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Resource</IRI>
+        <Literal xml:lang="en">Resources consumed/generated by the industries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Resource</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Resource</IRI>
+        <Literal xml:lang="en">Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceConsumer</IRI>
+        <Literal xml:lang="en">An industry that consumes several resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceConsumer</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceConsumer</IRI>
+        <Literal xml:lang="en">Resource Consumer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceConsumption</IRI>
+        <Literal xml:lang="en">Indicators that refers to the rate of consumption of water, enervy or material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceConsumption</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceConsumption</IRI>
+        <Literal xml:lang="en">Resource Consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceDisposal</IRI>
+        <Literal xml:lang="en">Indicators that refers to the rate of disposal in relation to pollution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceDisposal</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceDisposal</IRI>
+        <Literal xml:lang="en">Resource Disposal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceOutput</IRI>
+        <Literal xml:lang="en">Indicators that refers to the rate of output of water, enervy or material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceOutput</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceOutput</IRI>
+        <Literal xml:lang="en">Resource Output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceProducer</IRI>
+        <Literal xml:lang="en">An industry that produces several resources</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceProducer</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceProducer</IRI>
+        <Literal xml:lang="en">Resource Producer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>ResourceUtilization</IRI>
+        <Literal xml:lang="en">Indicators that refers to the rate of utilization of water, enervy or material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>ResourceUtilization</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ResourceUtilization</IRI>
+        <Literal xml:lang="en">Resource Utilization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>Salt</IRI>
+        <Literal xml:lang="en">Salt based material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Salt</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Salt</IRI>
+        <Literal xml:lang="en">Salt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>SemiSolidMaterial</IRI>
+        <Literal xml:lang="en">Semi Solid Material based resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SemiSolidMaterial</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SemiSolidMaterial</IRI>
+        <Literal xml:lang="en">Semi Solid Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>SolidMaterial</IRI>
+        <Literal xml:lang="en">Solid Material based resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SolidMaterial</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SolidMaterial</IRI>
+        <Literal xml:lang="en">Solid Material</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:comment"/>
+        <IRI>SolutionProvider</IRI>
+        <Literal xml:lang="en">An industry in charge of providing specific solutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>SolutionProvider</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SolutionProvider</IRI>
+        <Literal xml:lang="en">Solution Provider</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Technology</IRI>
+        <Literal xml:lang="en">Technology is the application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Technology</IRI>
+        <Literal xml:lang="en">https://w3id.org/def/wsis/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Technology</IRI>
+        <Literal xml:lang="en">Technology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TotalAmountSolidWaste</IRI>
+        <Literal xml:lang="en">Indicator related to total amount of solid waste for disposal. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TotalAmountSolidWaste</IRI>
+        <Literal xml:lang="en">Total Amount Solid Waste</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TotalAountWastewaterDischarge</IRI>
+        <Literal xml:lang="en">Indicator related to total amount of wastewater discharge. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TotalAountWastewaterDischarge</IRI>
+        <Literal xml:lang="en">Total Aount Wastewater Discharge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>WaterConsumptionIndicator</IRI>
+        <Literal xml:lang="en">Indicator related to Water Consumption per unit key product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>WaterConsumptionIndicator</IRI>
+        <Literal xml:lang="en">Water Consumption Indicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>WaterReuse</IRI>
+        <Literal xml:lang="en">Indicator related to water reuse ratio. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>WaterReuse</IRI>
+        <Literal xml:lang="en">Water Reuse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>canProcess</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>canProcess</IRI>
+        <Literal xml:lang="en">canProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>generates</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>generates</IRI>
+        <Literal xml:lang="en">generates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasKPILevel</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasKPILevel</IRI>
+        <Literal xml:lang="en">hasKPILevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOwner</IRI>
+        <Literal xml:lang="en">has Owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>hasProcess</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasProcess</IRI>
+        <Literal xml:lang="en">hasProcess</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isKPILevel</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isKPILevel</IRI>
+        <Literal xml:lang="en">isKPILevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>isPartOf</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isPartOf</IRI>
+        <Literal xml:lang="en">isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>usesTechnology</IRI>
+        <IRI></IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>usesTechnology</IRI>
+        <Literal xml:lang="en">usesTechnology</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

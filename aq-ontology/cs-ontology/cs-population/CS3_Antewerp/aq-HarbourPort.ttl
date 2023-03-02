@@ -1,0 +1,1198 @@
+@prefix : <https://w3id.org/def/wsis/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix core: <https://saref.etsi.org/core/> .
+@prefix om-2: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sare: <https://saref.etsi.org/saref4watr/> .
+@prefix term: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@base <https://w3id.org/def/wsis> .
+
+<https://w3id.org/def/wsis> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://w3id.org/def/wsis/v0.0.1/> ;
+                             term:creator "Aitor Corchero" ;
+                             term:description "An ontology as a catalyst for Water Smart Industrial Symbiosis (WSIS), in which water/wastewater plays a key role within a dynamic socio-economic and business oriented industrial ecosystem"@en ;
+                             term:issued "2022-03-05"^^xsd:date ;
+                             term:license <https://opensource.org/licenses/ISC> ;
+                             term:modified "2022-03-05"^^xsd:date ;
+                             term:publisher <https://ultimatewater.eu/> ;
+                             term:source <https://github.com/ULTIMATE-DIGITAL-TOOLS/ontology> ;
+                             term:title "Water Smart Industrial Symbiosis (WSIS) Ontology"@en ;
+                             vann:preferredNamespacePrefix "wsis" ;
+                             vann:preferredNamespaceUri "https://w3id.org/def/wsis/" ;
+                             owl:versionInfo "v0.0.2" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+term:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+term:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+term:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+term:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+term:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+term:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+term:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+term:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
+rdf:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#qualifiedCardinality
+owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                                   rdfs:label "hasGeometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                                  rdfs:label "sfContains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                                rdfs:label "sfWithin"@en .
+
+
+###  https://saref.etsi.org/core/hasMeasurement
+core:hasMeasurement rdf:type owl:ObjectProperty ;
+                    owl:inverseOf core:isMeasurementOf ;
+                    rdfs:isDefinedBy core: ;
+                    rdfs:label "has measurement"@en .
+
+
+###  https://saref.etsi.org/core/hasProperty
+core:hasProperty rdf:type owl:ObjectProperty ;
+                 rdfs:isDefinedBy core: ;
+                 rdfs:label "has property"@en .
+
+
+###  https://saref.etsi.org/core/isMeasuredIn
+core:isMeasuredIn rdf:type owl:ObjectProperty ;
+                  rdfs:isDefinedBy core: ;
+                  rdfs:label "is measured in"@en .
+
+
+###  https://saref.etsi.org/core/isMeasurementOf
+core:isMeasurementOf rdf:type owl:ObjectProperty ;
+                     rdfs:isDefinedBy core: ;
+                     rdfs:label "is measurement of"@en .
+
+
+###  https://saref.etsi.org/core/relatesToMeasurement
+core:relatesToMeasurement rdf:type owl:ObjectProperty ;
+                          rdfs:isDefinedBy core: ;
+                          rdfs:label "relates to measurement"@en .
+
+
+###  https://saref.etsi.org/core/relatesToProperty
+core:relatesToProperty rdf:type owl:ObjectProperty ;
+                       rdfs:isDefinedBy core: ;
+                       rdfs:label "relates to property"@en .
+
+
+###  https://saref.etsi.org/saref4city/assesses
+<https://saref.etsi.org/saref4city/assesses> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <https://saref.etsi.org/saref4city/isAssessedBy> ;
+                                             rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                             rdfs:label "assesses"@en .
+
+
+###  https://saref.etsi.org/saref4city/hasCalculationPeriod
+<https://saref.etsi.org/saref4city/hasCalculationPeriod> rdf:type owl:ObjectProperty ;
+                                                         rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                         rdfs:label "has calculation period"@en .
+
+
+###  https://saref.etsi.org/saref4city/hasKPI
+<https://saref.etsi.org/saref4city/hasKPI> rdf:type owl:ObjectProperty ;
+                                           owl:inverseOf <https://saref.etsi.org/saref4city/isKPIOf> ;
+                                           rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                           rdfs:label "has key performance indicator"@en .
+
+
+###  https://saref.etsi.org/saref4city/isAssessedBy
+<https://saref.etsi.org/saref4city/isAssessedBy> rdf:type owl:ObjectProperty ;
+                                                 rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                 rdfs:label "is assessed by"@en .
+
+
+###  https://saref.etsi.org/saref4city/isDerivedFrom
+<https://saref.etsi.org/saref4city/isDerivedFrom> rdf:type owl:ObjectProperty ;
+                                                  rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                  rdfs:label "is derived from"@en .
+
+
+###  https://saref.etsi.org/saref4city/isKPIOf
+<https://saref.etsi.org/saref4city/isKPIOf> rdf:type owl:ObjectProperty ;
+                                            rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                            rdfs:label "is key performance indicator of"@en .
+
+
+###  https://saref.etsi.org/saref4city/quantifiesKPI
+<https://saref.etsi.org/saref4city/quantifiesKPI> rdf:type owl:ObjectProperty ;
+                                                  rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                  rdfs:label "quantifies KPI"@en .
+
+
+###  https://saref.etsi.org/saref4city/refersToTime
+<https://saref.etsi.org/saref4city/refersToTime> rdf:type owl:ObjectProperty ;
+                                                 rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                 rdfs:label "refers to time"@en .
+
+
+###  https://saref.etsi.org/saref4watr/hasPhenomenonTime
+sare:hasPhenomenonTime rdf:type owl:ObjectProperty ;
+                       rdfs:domain core:Measurement ;
+                       rdfs:range <http://www.w3.org/2006/time#TemporalEntity> ;
+                       rdfs:comment "The time for which the value of a measurement applies to the feature of interest."@en ;
+                       rdfs:label "has phenomenon time"@en .
+
+
+###  https://saref.etsi.org/saref4watr/isDesignedFor
+sare:isDesignedFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "The type of water for which an infrastructure is designed for."@en ;
+                   rdfs:label "is designed for"@en .
+
+
+###  https://saref.etsi.org/saref4watr/isIntendedFor
+sare:isIntendedFor rdf:type owl:ObjectProperty ;
+                   rdfs:comment "The intended use of the infrastructure."@en ;
+                   rdfs:label "is intended for"@en .
+
+
+###  https://w3id.org/def/wsis/canProcess
+:canProcess rdf:type owl:ObjectProperty ;
+            rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+            rdfs:label "canProcess"@en .
+
+
+###  https://w3id.org/def/wsis/generates
+:generates rdf:type owl:ObjectProperty ;
+           rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+           rdfs:label "generates"@en .
+
+
+###  https://w3id.org/def/wsis/hasKPILevel
+:hasKPILevel rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isKPILevel ;
+             rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+             rdfs:label "hasKPILevel"@en .
+
+
+###  https://w3id.org/def/wsis/hasProcess
+:hasProcess rdf:type owl:ObjectProperty ;
+            rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+            rdfs:label "hasProcess"@en .
+
+
+###  https://w3id.org/def/wsis/isKPILevel
+:isKPILevel rdf:type owl:ObjectProperty ;
+            rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+            rdfs:label "isKPILevel"@en .
+
+
+###  https://w3id.org/def/wsis/isPartOf
+:isPartOf rdf:type owl:ObjectProperty ,
+                   owl:TransitiveProperty ;
+          rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+          rdfs:label "isPartOf"@en .
+
+
+###  https://w3id.org/def/wsis/usesTechnology
+:usesTechnology rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                rdfs:label "usesTechnology"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> rdf:type owl:DatatypeProperty .
+
+
+###  https://saref.etsi.org/core/hasDescription
+core:hasDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:isDefinedBy core: ;
+                    rdfs:label "has description"@en .
+
+
+###  https://saref.etsi.org/core/hasName
+core:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:isDefinedBy core: ;
+             rdfs:label "has name"@en .
+
+
+###  https://saref.etsi.org/core/hasTimestamp
+core:hasTimestamp rdf:type owl:DatatypeProperty ;
+                  rdfs:isDefinedBy core: ;
+                  rdfs:label "has timestamp"@en .
+
+
+###  https://saref.etsi.org/core/hasValue
+core:hasValue rdf:type owl:DatatypeProperty ;
+              rdfs:isDefinedBy core: ;
+              rdfs:label "has value"@en .
+
+
+###  https://saref.etsi.org/saref4city/hasCreationDate
+<https://saref.etsi.org/saref4city/hasCreationDate> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:range xsd:dateTime ;
+                                                    rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                    rdfs:label "has creation date"@en .
+
+
+###  https://saref.etsi.org/saref4city/hasExpirationDate
+<https://saref.etsi.org/saref4city/hasExpirationDate> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:range xsd:dateTime ;
+                                                      rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                      rdfs:label "has expiration date"@en .
+
+
+###  https://saref.etsi.org/saref4city/hasLastUpdateDate
+<https://saref.etsi.org/saref4city/hasLastUpdateDate> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:range xsd:dateTime ;
+                                                      rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                      rdfs:label "has last update date"@en .
+
+
+###  https://w3id.org/def/wsis/hasOwner
+:hasOwner rdf:type owl:DatatypeProperty ;
+          rdfs:label "has Owner"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre
+om-2:PrefixedGramPerLitre rdf:type owl:Class ;
+                          rdfs:subClassOf core:UnitOfMeasure .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:comment "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en ;
+                                               rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                               rdfs:label "Feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:comment "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+                                                rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                                rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     rdfs:isDefinedBy <http://www.opengis.net/ont/geosparql#> ;
+                                                     rdfs:label "Spatial object"@en .
+
+
+###  http://www.opengis.net/ont/sf#Point
+<http://www.opengis.net/ont/sf#Point> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                      rdfs:isDefinedBy <http://www.opengis.net/ont/sf#> ;
+                                      rdfs:label "Point"@en .
+
+
+###  http://www.opengis.net/ont/sf#Polygon
+<http://www.opengis.net/ont/sf#Polygon> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                        rdfs:isDefinedBy <http://www.opengis.net/ont/sf#> ;
+                                        rdfs:label "Polygon"@en .
+
+
+###  http://www.w3.org/2006/time#DayOfWeek
+<http://www.w3.org/2006/time#DayOfWeek> rdf:type owl:Class ;
+                                        rdfs:comment "The day of week."@en ;
+                                        rdfs:isDefinedBy <http://www.w3.org/2006/time#> ;
+                                        rdfs:label "Day of week"@en .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                      rdfs:comment "A temporal entity with zero extent or duration"@en ;
+                                      rdfs:isDefinedBy <http://www.w3.org/2006/time#> ;
+                                      rdfs:label "Instant"@en .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> ;
+                                       rdfs:comment "A temporal entity with an extent or duration."@en ;
+                                       rdfs:isDefinedBy <http://www.w3.org/2006/time#> ;
+                                       rdfs:label "Interval"@en .
+
+
+###  http://www.w3.org/2006/time#TemporalDuration
+<http://www.w3.org/2006/time#TemporalDuration> rdf:type owl:Class ;
+                                               rdfs:comment "Time extent; duration of a time interval separate from its particular start position"@en ;
+                                               rdfs:isDefinedBy <http://www.w3.org/2006/time#> ;
+                                               rdfs:label "Temporal duration"@en .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:comment "A temporal interval or instant."@en ;
+                                             rdfs:isDefinedBy <http://www.w3.org/2006/time#> ;
+                                             rdfs:label "Temporal entity"@en .
+
+
+###  https://saref.etsi.org/core/FeatureOfInterest
+core:FeatureOfInterest rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty core:hasMeasurement ;
+                                         owl:allValuesFrom core:Measurement
+                                       ] ;
+                       rdfs:isDefinedBy core: .
+
+
+###  https://saref.etsi.org/core/Measurement
+core:Measurement rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:isMeasuredIn ;
+                                   owl:allValuesFrom core:UnitOfMeasure
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:relatesToProperty ;
+                                   owl:allValuesFrom core:Property
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:isMeasuredIn ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass core:UnitOfMeasure
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:relatesToProperty ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass core:Property
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:hasTimestamp ;
+                                   owl:allValuesFrom xsd:dateTime
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty core:hasValue ;
+                                   owl:cardinality "1"^^xsd:nonNegativeInteger
+                                 ] ;
+                 rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+                 rdfs:isDefinedBy core: ;
+                 rdfs:label "Measurement"@en .
+
+
+###  https://saref.etsi.org/core/Property
+core:Property rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty core:relatesToMeasurement ;
+                                owl:allValuesFrom core:Measurement
+                              ] ;
+              rdfs:comment "An aspect of an entity that can be observable by a sensor."@en ;
+              rdfs:isDefinedBy core: ;
+              rdfs:label "Property"@en .
+
+
+###  https://saref.etsi.org/core/UnitOfMeasure
+core:UnitOfMeasure rdf:type owl:Class ;
+                   rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."@en ;
+                   rdfs:isDefinedBy core: ;
+                   rdfs:label "Unit of measure"@en .
+
+
+###  https://saref.etsi.org/saref4city/Agent
+<https://saref.etsi.org/saref4city/Agent> rdf:type owl:Class .
+
+
+###  https://saref.etsi.org/saref4city/KeyPerformanceIndicator
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> rdf:type owl:Class ;
+                                                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <https://saref.etsi.org/saref4city/hasCalculationPeriod> ;
+                                                                              owl:allValuesFrom <http://www.w3.org/2006/time#TemporalDuration>
+                                                                            ] ,
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <https://saref.etsi.org/saref4city/isKPIOf> ;
+                                                                              owl:allValuesFrom core:FeatureOfInterest
+                                                                            ] ;
+                                                            rdfs:comment "A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE)"@en ;
+                                                            rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                            rdfs:label "Key Performance Indicator"@en ;
+                                                            rdfs:seeAlso <http://fiware-datamodels.readthedocs.io/en/latest/KeyPerformanceIndicator/doc/spec/index.html> .
+
+
+###  https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty core:isMeasuredIn ;
+                                                                                        owl:allValuesFrom core:UnitOfMeasure
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/assesses> ;
+                                                                                        owl:allValuesFrom core:FeatureOfInterest
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/isAssessedBy> ;
+                                                                                        owl:allValuesFrom <https://saref.etsi.org/saref4city/Agent>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/isDerivedFrom> ;
+                                                                                        owl:allValuesFrom core:Measurement
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/quantifiesKPI> ;
+                                                                                        owl:allValuesFrom <https://saref.etsi.org/saref4city/KeyPerformanceIndicator>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/refersToTime> ;
+                                                                                        owl:allValuesFrom <http://www.w3.org/2006/time#TemporalEntity>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/hasCreationDate> ;
+                                                                                        owl:allValuesFrom xsd:dateTime
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/hasExpirationDate> ;
+                                                                                        owl:allValuesFrom xsd:dateTime
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <https://saref.etsi.org/saref4city/hasLastUpdateDate> ;
+                                                                                        owl:allValuesFrom xsd:dateTime
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty core:hasValue ;
+                                                                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                                      ] ;
+                                                                      rdfs:comment "A Key Performance Indicator assessment represents the assessment of a KPI calculated by a given agent in a given time."@en ;
+                                                                      rdfs:isDefinedBy <https://saref.etsi.org/saref4city/> ;
+                                                                      rdfs:label "Key performance indicator assessment"@en .
+
+
+###  https://saref.etsi.org/saref4watr/AcceptabilityProperty
+sare:AcceptabilityProperty rdf:type owl:Class ;
+                           rdfs:subClassOf sare:WaterProperty .
+
+
+###  https://saref.etsi.org/saref4watr/BacterialProperty
+sare:BacterialProperty rdf:type owl:Class ;
+                       rdfs:subClassOf sare:MicrobialProperty .
+
+
+###  https://saref.etsi.org/saref4watr/ChemicalProperty
+sare:ChemicalProperty rdf:type owl:Class ;
+                      rdfs:subClassOf sare:WaterProperty .
+
+
+###  https://saref.etsi.org/saref4watr/MicrobialProperty
+sare:MicrobialProperty rdf:type owl:Class ;
+                       rdfs:subClassOf sare:WaterProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Water
+sare:Water rdf:type owl:Class ;
+           rdfs:subClassOf core:FeatureOfInterest ,
+                           :Resource ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty core:hasProperty ;
+                             owl:allValuesFrom sare:WaterProperty
+                           ] .
+
+
+###  https://saref.etsi.org/saref4watr/WaterFlowProperty
+sare:WaterFlowProperty rdf:type owl:Class ;
+                       rdfs:subClassOf :WaterProperty .
+
+
+###  https://saref.etsi.org/saref4watr/WaterProperty
+sare:WaterProperty rdf:type owl:Class ;
+                   rdfs:subClassOf :WaterProperty ;
+                   rdfs:comment "Class to group those properties related to the water."@en ;
+                   rdfs:label "Water property"@en .
+
+
+###  https://w3id.org/def/wsis/Air
+:Air rdf:type owl:Class ;
+     rdfs:subClassOf core:FeatureOfInterest ,
+                     :Resource ;
+     rdf:comment "Air based resource."@en ;
+     rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+     rdfs:label "Air"@en .
+
+
+###  https://w3id.org/def/wsis/AirProperty
+:AirProperty rdf:type owl:Class ;
+             rdfs:subClassOf core:Property ;
+             rdfs:comment "Class to group those properties related to the air resource."@en ;
+             rdfs:label "Air property"@en .
+
+
+###  https://w3id.org/def/wsis/Energy
+:Energy rdf:type owl:Class ;
+        rdfs:subClassOf core:FeatureOfInterest ,
+                        :Resource .
+
+
+###  https://w3id.org/def/wsis/EnergyProperty
+:EnergyProperty rdf:type owl:Class ;
+                rdfs:subClassOf core:Property ;
+                rdfs:comment "Class to group those properties related to the energy."@en ;
+                rdfs:label "Energy property"@en .
+
+
+###  https://w3id.org/def/wsis/EnvironmentalImpacts
+:EnvironmentalImpacts rdf:type owl:Class ;
+                      rdfs:subClassOf <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> ;
+                      rdf:comment "Indicators that refers to economic impacts."@en ,
+                                  "Indicators that refers to environmental impacts."@en ,
+                                  "Indicators that refers to social impacts."@en ;
+                      rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                      rdfs:label "Economic Impacts"@en ,
+                                 "Environmental Impacts"@en ,
+                                 "Social Impacts"@en .
+
+
+###  https://w3id.org/def/wsis/Industry
+:Industry rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasProcess ;
+                            owl:allValuesFrom :Process
+                          ] ;
+          rdf:comment "An industrial infrastructure"@en ;
+          rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+          rdfs:label "Industry"@en .
+
+
+###  https://w3id.org/def/wsis/IndustryCluster
+:IndustryCluster rdf:type owl:Class ;
+                 rdfs:label "Industry Cluster"@en .
+
+
+###  https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel
+:KeyPerformanceIndicatorLevel rdf:type owl:Class ;
+                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty :isKPILevel ;
+                                                owl:allValuesFrom <https://saref.etsi.org/saref4city/KeyPerformanceIndicator>
+                                              ] ;
+                              rdf:comment "Level of the KPI considering the geographical impact."@en ;
+                              rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                              rdfs:label "Key Performance Indicator Level"@en .
+
+
+###  https://w3id.org/def/wsis/MacroLevelIndicator
+:MacroLevelIndicator rdf:type owl:Class ;
+                     rdfs:subClassOf :KeyPerformanceIndicatorLevel .
+
+
+###  https://w3id.org/def/wsis/Material
+:Material rdf:type owl:Class ;
+          rdfs:subClassOf core:FeatureOfInterest ,
+                          :Resource .
+
+
+###  https://w3id.org/def/wsis/MaterialProperty
+:MaterialProperty rdf:type owl:Class ;
+                  rdfs:subClassOf core:Property ;
+                  rdfs:comment "Class to group those properties related to the material."@en ;
+                  rdfs:label "Material property"@en .
+
+
+###  https://w3id.org/def/wsis/MesoLevelIndicator
+:MesoLevelIndicator rdf:type owl:Class ;
+                    rdfs:subClassOf :KeyPerformanceIndicatorLevel .
+
+
+###  https://w3id.org/def/wsis/MicroLevelIndicator
+:MicroLevelIndicator rdf:type owl:Class ;
+                     rdfs:subClassOf :KeyPerformanceIndicatorLevel .
+
+
+###  https://w3id.org/def/wsis/Process
+:Process rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :usesTechnology ;
+                           owl:allValuesFrom :Technology
+                         ] ;
+         rdf:comment "A process that involves the industry operation."@en ,
+                     "Technology used in the different industrial processes."@en ;
+         rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+         rdfs:label "Process"@en ,
+                    "Technology"@en .
+
+
+###  https://w3id.org/def/wsis/RawWater
+:RawWater rdf:type owl:Class ;
+          rdfs:subClassOf sare:Water ;
+          rdf:comment "Raw Water type of water."@en ,
+                      "Waste Water type of water."@en ;
+          rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+          rdfs:label "Raw Water"@en ,
+                     "Waste Water"@en .
+
+
+###  https://w3id.org/def/wsis/Resource
+:Resource rdf:type owl:Class ;
+          rdf:comment "Resources consumed/generated by the industries."@en ;
+          rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+          rdfs:label "Resource"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceConsumer
+:ResourceConsumer rdf:type owl:Class ;
+                  rdfs:subClassOf :Industry ;
+                  rdf:comment "An industry that consumes several resources"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                  rdfs:label "Resource Consumer"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceConsumption
+:ResourceConsumption rdf:type owl:Class ;
+                     rdfs:subClassOf <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> ;
+                     rdf:comment "Indicators that refers to the rate of consumption of water, enervy or material."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                     rdfs:label "Resource Consumption"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceDisposal
+:ResourceDisposal rdf:type owl:Class ;
+                  rdfs:subClassOf <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> ;
+                  rdf:comment "Indicators that refers to the rate of disposal in relation to pollution."@en ;
+                  rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                  rdfs:label "Resource Disposal"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceOutput
+:ResourceOutput rdf:type owl:Class ;
+                rdfs:subClassOf <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> ;
+                rdf:comment "Indicators that refers to the rate of output of water, enervy or material."@en ;
+                rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                rdfs:label "Resource Output"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceProducer
+:ResourceProducer rdf:type owl:Class ;
+                  rdfs:subClassOf :Industry ;
+                  rdf:comment "An industry that produces several resources"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                  rdfs:label "Resource Producer"@en .
+
+
+###  https://w3id.org/def/wsis/ResourceUtilization
+:ResourceUtilization rdf:type owl:Class ;
+                     rdfs:subClassOf <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> ;
+                     rdf:comment "Indicators that refers to the rate of utilization of water, enervy or material."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                     rdfs:label "Resource Utilization"@en .
+
+
+###  https://w3id.org/def/wsis/Salt
+:Salt rdf:type owl:Class ;
+      rdfs:subClassOf :Material ;
+      rdf:comment "Salt based material."@en ;
+      rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+      rdfs:label "Salt"@en .
+
+
+###  https://w3id.org/def/wsis/SemiSolidMaterial
+:SemiSolidMaterial rdf:type owl:Class ;
+                   rdfs:subClassOf :Material ;
+                   rdf:comment "Semi Solid Material based resource."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                   rdfs:label "Semi Solid Material"@en .
+
+
+###  https://w3id.org/def/wsis/SolidMaterial
+:SolidMaterial rdf:type owl:Class ;
+               rdfs:subClassOf :Material ;
+               rdf:comment "Solid Material based resource."@en ;
+               rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+               rdfs:label "Solid Material"@en .
+
+
+###  https://w3id.org/def/wsis/SolutionProvider
+:SolutionProvider rdf:type owl:Class ;
+                  rdfs:subClassOf :Industry ;
+                  rdf:comment "An industry in charge of providing specific solutions"@en ;
+                  rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                  rdfs:label "Solution Provider"@en .
+
+
+###  https://w3id.org/def/wsis/Technology
+:Technology rdf:type owl:Class ;
+            rdfs:comment "Technology is the application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment"@en ;
+            rdfs:isDefinedBy "https://w3id.org/def/wsis/"@en ;
+            rdfs:label "Technology"@en .
+
+
+###  https://w3id.org/def/wsis/WaterProperty
+:WaterProperty rdf:type owl:Class ;
+               rdfs:subClassOf core:Property .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius
+om-2:centidegreeCelsius rdf:type owl:NamedIndividual ,
+                                 core:UnitOfMeasure .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerYear
+om-2:cubicMetrePerYear rdf:type owl:NamedIndividual .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre
+om-2:milligramPerLitre rdf:type owl:NamedIndividual ,
+                                om-2:PrefixedGramPerLitre .
+
+
+###  https://saref.etsi.org/core/ConductivityMeasurement
+core:ConductivityMeasurement rdf:type owl:NamedIndividual ,
+                                      core:Measurement ;
+                             core:isMeasuredIn core:microSiemmensPerCm ;
+                             core:relatesToProperty sare:Conductivity .
+
+
+###  https://saref.etsi.org/core/TemperatureMeasurement
+core:TemperatureMeasurement rdf:type owl:NamedIndividual ,
+                                     core:Measurement ;
+                            core:isMeasuredIn om-2:centidegreeCelsius ;
+                            core:relatesToProperty sare:FlowTemperature .
+
+
+###  https://saref.etsi.org/core/WaterLevelMeasurement
+core:WaterLevelMeasurement rdf:type owl:NamedIndividual ,
+                                    core:Measurement ;
+                           core:isMeasuredIn core:mTAW ;
+                           core:relatesToProperty sare:waterLevel .
+
+
+###  https://saref.etsi.org/core/mTAW
+core:mTAW rdf:type owl:NamedIndividual ,
+                   core:UnitOfMeasure ;
+          core:hasName "mTAW"^^xsd:string .
+
+
+###  https://saref.etsi.org/core/microSiemmensPerCm
+core:microSiemmensPerCm rdf:type owl:NamedIndividual ,
+                                 core:UnitOfMeasure ;
+                        core:hasName "μS/cm"^^xsd:string .
+
+
+###  https://saref.etsi.org/saref4watr/AlbertCanalWater
+sare:AlbertCanalWater rdf:type owl:NamedIndividual ,
+                               sare:Water .
+
+
+###  https://saref.etsi.org/saref4watr/Aluminium
+sare:Aluminium rdf:type owl:NamedIndividual ,
+                        sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Ammonium
+sare:Ammonium rdf:type owl:NamedIndividual ,
+                       sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Cadmium
+sare:Cadmium rdf:type owl:NamedIndividual ,
+                      sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Chloride
+sare:Chloride rdf:type owl:NamedIndividual ,
+                       sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Conductivity
+sare:Conductivity rdf:type owl:NamedIndividual ,
+                           sare:AcceptabilityProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Copper
+sare:Copper rdf:type owl:NamedIndividual ,
+                     sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Energy
+sare:Energy rdf:type owl:NamedIndividual .
+
+
+###  https://saref.etsi.org/saref4watr/EscherichiaColi
+sare:EscherichiaColi rdf:type owl:NamedIndividual ,
+                              sare:BacterialProperty .
+
+
+###  https://saref.etsi.org/saref4watr/FlowRate
+sare:FlowRate rdf:type owl:NamedIndividual ,
+                       sare:WaterFlowProperty .
+
+
+###  https://saref.etsi.org/saref4watr/FlowTemperature
+sare:FlowTemperature rdf:type owl:NamedIndividual ,
+                              sare:WaterFlowProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Iron
+sare:Iron rdf:type owl:NamedIndividual ,
+                   sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Lead
+sare:Lead rdf:type owl:NamedIndividual ,
+                   sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Manganese
+sare:Manganese rdf:type owl:NamedIndividual ,
+                        sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Material
+sare:Material rdf:type owl:NamedIndividual .
+
+
+###  https://saref.etsi.org/saref4watr/Nickel
+sare:Nickel rdf:type owl:NamedIndividual ,
+                     sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Nitrate
+sare:Nitrate rdf:type owl:NamedIndividual ,
+                      sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Nitrite
+sare:Nitrite rdf:type owl:NamedIndividual ,
+                      sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Sodium
+sare:Sodium rdf:type owl:NamedIndividual ,
+                     sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Sulphate
+sare:Sulphate rdf:type owl:NamedIndividual ,
+                       sare:ChemicalProperty .
+
+
+###  https://saref.etsi.org/saref4watr/TotalDissolvedSolids
+sare:TotalDissolvedSolids rdf:type owl:NamedIndividual ,
+                                   sare:AcceptabilityProperty .
+
+
+###  https://saref.etsi.org/saref4watr/TotalSuspendedSolids
+sare:TotalSuspendedSolids rdf:type owl:NamedIndividual ,
+                                   sare:AcceptabilityProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Turbidity
+sare:Turbidity rdf:type owl:NamedIndividual ,
+                        sare:AcceptabilityProperty .
+
+
+###  https://saref.etsi.org/saref4watr/Water
+sare:Water rdf:type owl:NamedIndividual .
+
+
+###  https://saref.etsi.org/saref4watr/WaterPortToCanal
+sare:WaterPortToCanal rdf:type owl:NamedIndividual ,
+                               sare:Water .
+
+
+###  https://saref.etsi.org/saref4watr/waterLevel
+sare:waterLevel rdf:type owl:NamedIndividual ,
+                         sare:ChemicalProperty ;
+                core:hasDescription """
+    Water level refers to the height of the water surface in relation to a reference point, such as sea level or a fixed point on a shoreline. Water levels can change due to a variety of factors, including tides, weather, and human activities. The measurement of water level is important for many activities such as navigation, flood control, and monitoring of water resources. There are different ways to measure water level, such as using a staff gauge, a pressure transducer or a radar sensor, depending on the location, the precision and the frequency of measurements required.
+    """^^xsd:string ;
+                core:hasName "waterLevel"^^xsd:string .
+
+
+###  https://w3id.org/def/wsis/AlbertCanal
+:AlbertCanal rdf:type owl:NamedIndividual ,
+                      :Technology ;
+             :canProcess sare:WaterPortToCanal ;
+             :generates sare:AlbertCanalWater ;
+             core:hasDescription "Albert Canal"^^xsd:string ;
+             core:hasName "Albert Canal"^^xsd:string .
+
+
+###  https://w3id.org/def/wsis/AntwerpHarbour
+:AntwerpHarbour rdf:type owl:NamedIndividual ,
+                         :Industry ;
+                core:hasMeasurement core:ConductivityMeasurement ,
+                                    core:TemperatureMeasurement ,
+                                    core:WaterLevelMeasurement ;
+                :generates sare:WaterPortToCanal ;
+                core:hasDescription """
+        The Port of Antwerp is the leading European petrochemical and chemical cluster in Europe and home to key industrial players in chemicals production. Several of these chemical companies are large water users that require water for processing products, cooling, and steam production. The freshwater source that connects to the Antwerp harbour is the Albert Canal. The Albert Canal on its turn receives water from the river Meuse. Freshwater of the river Meuse transported through the Albert Canal plays a key role in the Flanders’ navigation transport and water use for economic activities. Water is transported from the river Meuse towards the Antwerp harbour through shipping transport and sluice activities. Drinking water company Water-link abstracts water from the Albert Canal for drinking water production.
+    """^^xsd:string ;
+                core:hasName "Antwerp-Harbour"^^xsd:string ;
+                :hasOwner "Port of Antwerp"^^xsd:string .
+
+
+###  https://w3id.org/def/wsis/EmissionsProduced
+:EmissionsProduced rdf:type owl:NamedIndividual ,
+                            :ResourceDisposal ;
+                   sare:isDesignedFor sare:Water ;
+                   sare:isIntendedFor sare:Water ;
+                   :hasKPILevel :MacroLevelIndicator ,
+                                :MesoLevelIndicator ,
+                                :MicroLevelIndicator ;
+                   rdfs:comment "Indicator related to Emisions Produced (e.g. CO2). "@en ;
+                   rdfs:label "Emissions Produced"@en .
+
+
+###  https://w3id.org/def/wsis/Energy
+:Energy rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/wsis/EnergyConsumptionIndicator
+:EnergyConsumptionIndicator rdf:type owl:NamedIndividual ,
+                                     :ResourceConsumption ;
+                            sare:isDesignedFor sare:Energy ;
+                            sare:isIntendedFor sare:Energy ;
+                            :hasKPILevel :MacroLevelIndicator ,
+                                         :MesoLevelIndicator ,
+                                         :MicroLevelIndicator ;
+                            rdfs:comment "Indicator related to Energy Consumption per unit key product"@en ;
+                            rdfs:label "Energy Consumption Indicator"@en .
+
+
+###  https://w3id.org/def/wsis/MacroLevelIndicator
+:MacroLevelIndicator rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/wsis/Material
+:Material rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/wsis/MesoLevelIndicator
+:MesoLevelIndicator rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/wsis/MicroLevelIndicator
+:MicroLevelIndicator rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/wsis/OutputEnergy
+:OutputEnergy rdf:type owl:NamedIndividual ,
+                       :ResourceOutput ;
+              sare:isDesignedFor :Energy ;
+              sare:isIntendedFor :Energy ;
+              :hasKPILevel :MacroLevelIndicator ,
+                           :MesoLevelIndicator ,
+                           :MicroLevelIndicator ;
+              rdfs:comment "Indicator related to Output of energy"@en ;
+              rdfs:label "Output Energy"@en .
+
+
+###  https://w3id.org/def/wsis/OutputLand
+:OutputLand rdf:type owl:NamedIndividual ,
+                     :ResourceOutput ;
+            sare:isDesignedFor sare:Material ;
+            sare:isIntendedFor sare:Material ;
+            :hasKPILevel :MacroLevelIndicator ,
+                         :MesoLevelIndicator ,
+                         :MicroLevelIndicator ;
+            rdfs:comment "Indicator related to Output of Land"@en ;
+            rdfs:label "Output Land"@en .
+
+
+###  https://w3id.org/def/wsis/OutputMainMineralResource
+:OutputMainMineralResource rdf:type owl:NamedIndividual ,
+                                    :ResourceOutput ;
+                           sare:isDesignedFor :Material ;
+                           sare:isIntendedFor :Material ;
+                           :hasKPILevel :MacroLevelIndicator ,
+                                        :MesoLevelIndicator ,
+                                        :MicroLevelIndicator ;
+                           rdfs:comment "Indicator related to Output of the main mineral reosurce"@en ;
+                           rdfs:label "Output Main Mineral Resource"@en .
+
+
+###  https://w3id.org/def/wsis/OutputWaterResource
+:OutputWaterResource rdf:type owl:NamedIndividual ,
+                              :ResourceOutput ;
+                     sare:isDesignedFor sare:Water ;
+                     sare:isIntendedFor sare:Water ;
+                     :hasKPILevel :MacroLevelIndicator ,
+                                  :MesoLevelIndicator ,
+                                  :MicroLevelIndicator ;
+                     rdfs:comment "Indicator related to Output of Water Resource"@en ;
+                     rdfs:label "Output Water Resource"@en .
+
+
+###  https://w3id.org/def/wsis/RecyclingRate
+:RecyclingRate rdf:type owl:NamedIndividual ,
+                        :ResourceUtilization ;
+               sare:isDesignedFor sare:Material ,
+                                  sare:Water ;
+               sare:isIntendedFor sare:Material ,
+                                  sare:Water ;
+               :hasKPILevel :MacroLevelIndicator ,
+                            :MesoLevelIndicator ,
+                            :MicroLevelIndicator ;
+               rdfs:comment "Indicator related to recycling rate of solid waste or wastewater"@en ;
+               rdfs:label "Recycling Rate"@en .
+
+
+###  https://w3id.org/def/wsis/RecyclingRateMaterials
+:RecyclingRateMaterials rdf:type owl:NamedIndividual ,
+                                 :ResourceUtilization ;
+                        sare:isDesignedFor sare:Material ;
+                        sare:isIntendedFor sare:Material ;
+                        :hasKPILevel :MacroLevelIndicator ,
+                                     :MesoLevelIndicator ,
+                                     :MicroLevelIndicator ;
+                        rdfs:comment "Indicator related to recycling rate of materials. "@en ;
+                        rdfs:label "Recycling Rate Materials"@en .
+
+
+###  https://w3id.org/def/wsis/TotalAmountSolidWaste
+:TotalAmountSolidWaste rdf:type owl:NamedIndividual ,
+                                :ResourceDisposal ;
+                       sare:isDesignedFor sare:Material ,
+                                          sare:Water ;
+                       sare:isIntendedFor sare:Material ,
+                                          sare:Water ;
+                       :hasKPILevel :MacroLevelIndicator ,
+                                    :MesoLevelIndicator ,
+                                    :MicroLevelIndicator ;
+                       rdfs:comment "Indicator related to total amount of solid waste for disposal. "@en ;
+                       rdfs:label "Total Amount Solid Waste"@en .
+
+
+###  https://w3id.org/def/wsis/TotalAountWastewaterDischarge
+:TotalAountWastewaterDischarge rdf:type owl:NamedIndividual ,
+                                        :ResourceDisposal ;
+                               sare:isDesignedFor sare:Material ,
+                                                  sare:Water ;
+                               sare:isIntendedFor sare:Material ,
+                                                  sare:Water ;
+                               :hasKPILevel :MacroLevelIndicator ,
+                                            :MesoLevelIndicator ,
+                                            :MicroLevelIndicator ;
+                               rdfs:comment "Indicator related to total amount of wastewater discharge. "@en ;
+                               rdfs:label "Total Aount Wastewater Discharge"@en .
+
+
+###  https://w3id.org/def/wsis/UpstreamAreaAlbertCanal
+:UpstreamAreaAlbertCanal rdf:type owl:NamedIndividual ,
+                                  :Technology ;
+                         :canProcess sare:AlbertCanalWater .
+
+
+###  https://w3id.org/def/wsis/WaterConsumptionIndicator
+:WaterConsumptionIndicator rdf:type owl:NamedIndividual ,
+                                    :ResourceConsumption ;
+                           sare:isDesignedFor sare:Water ;
+                           sare:isIntendedFor sare:Water ;
+                           :hasKPILevel :MacroLevelIndicator ,
+                                        :MesoLevelIndicator ,
+                                        :MicroLevelIndicator ;
+                           rdfs:comment "Indicator related to Water Consumption per unit key product"@en ;
+                           rdfs:label "Water Consumption Indicator"@en .
+
+
+###  https://w3id.org/def/wsis/WaterReuse
+:WaterReuse rdf:type owl:NamedIndividual ,
+                     :ResourceUtilization ;
+            sare:isDesignedFor sare:Water ;
+            sare:isIntendedFor sare:Water ;
+            :hasKPILevel :MacroLevelIndicator ,
+                         :MesoLevelIndicator ,
+                         :MicroLevelIndicator ;
+            rdfs:comment "Indicator related to water reuse ratio. "@en ;
+            rdfs:label "Water Reuse"@en .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+sare:Water rdfs:comment "This class is used to define a particular quantity or body of water."@en ;
+            rdfs:label "Water"@en .
+
+
+:Energy rdfs:label "Energy"@en ;
+        rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+        rdf:comment "Energy based resource."@en .
+
+
+:MacroLevelIndicator rdf:comment "evaluate, monitor, and improve policies regarding environmental, economic, and/or social concerns."@en ;
+                     rdfs:label "Macro Level Indicator"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/def/wsis> .
+
+
+:Material rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+          rdf:comment "Material based resource."@en ;
+          rdfs:label "Material"@en .
+
+
+:MesoLevelIndicator rdfs:isDefinedBy <https://w3id.org/def/wsis> ;
+                    rdfs:label "Meso Level Indicator"@en ;
+                    rdf:comment "Measure physical properties from the technological cycles with full or partial LCT approach, e.g. the indicator Reusability/Recyclability/Recoverability (RRR) in terms of mass includes the potential rate to reuse (products, components), recycle (materials), and recover (energy)."@en .
+
+
+:MicroLevelIndicator rdfs:label "Micro Level Indicator"@en ;
+                     rdf:comment "The indicators measure gate-to-gate performance from the technological cycles without Life Cycle Thinking approach, e.g. Recycling Rate."@en ;
+                     rdfs:isDefinedBy <https://w3id.org/def/wsis> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
