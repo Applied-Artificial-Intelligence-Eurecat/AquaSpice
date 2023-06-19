@@ -1,0 +1,46 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" "base:ResourceConsumer" "base:Material" "http://www.w3.org/2006/time#Instant" "core:UnitOfMeasure" "core:FeatureOfInterest" "base:RawWater" "base:WaterProperty" "base:Energy" "sare:ChemicalProperty" "base:EnergyProperty" "base:MaterialProperty" "base:MacroLevelIndicator" "base:Salt" "base:AirProperty" "base:ResourceDisposal" "http://www.opengis.net/ont/geosparql#Geometry" "base:ResourceOutput" "base:ResourceUtilization" "sare:BacterialProperty" "sare:WaterFlowProperty" "http://www.opengis.net/ont/sf#Polygon" "http://www.opengis.net/ont/sf#Point" "base:ResourceConsumption" "base:EnvironmentalImpacts" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:KeyPerformanceIndicatorLevel" "http://www.w3.org/2006/time#Interval" "sare:Water" "http://www.w3.org/2006/time#TemporalEntity" "base:SolutionProvider" "om-2:PrefixedGramPerLitre" "base:Air" "base:MesoLevelIndicator" "http://www.opengis.net/ont/geosparql#Feature" "base:MicroLevelIndicator" "base:SolidMaterial" "base:SemiSolidMaterial" "base:ResourceProducer" "sare:AcceptabilityProperty" "base:Industry" "sare:WaterProperty" "base:Resource" "core:Property" "sare:MicrobialProperty" ; /*classes style*/
+	"http://www.opengis.net/ont/sf#Polygon" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
+	"base:Energy" -> "base:Resource" [ label = "rdfs:subClassOf" ];
+	"base:Energy" -> "core:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:RawWater" -> "sare:Water" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Instant" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"base:AirProperty" -> "core:Property" [ label = "rdfs:subClassOf" ];
+	"base:ResourceDisposal" -> "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"base:ResourceProducer" -> "base:Industry" [ label = "rdfs:subClassOf" ];
+	"base:Salt" -> "base:Material" [ label = "rdfs:subClassOf" ];
+	"base:WaterProperty" -> "core:Property" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"sare:Water" -> "base:Resource" [ label = "rdfs:subClassOf" ];
+	"sare:Water" -> "core:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:ResourceConsumption" -> "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"base:EnergyProperty" -> "core:Property" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/sf#Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
+	"base:MesoLevelIndicator" -> "base:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"base:EnvironmentalImpacts" -> "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"base:Material" -> "base:Resource" [ label = "rdfs:subClassOf" ];
+	"base:Material" -> "core:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"base:ResourceConsumer" -> "base:Industry" [ label = "rdfs:subClassOf" ];
+	"om-2:PrefixedGramPerLitre" -> "core:UnitOfMeasure" [ label = "rdfs:subClassOf" ];
+	"sare:ChemicalProperty" -> "sare:WaterProperty" [ label = "rdfs:subClassOf" ];
+	"base:ResourceUtilization" -> "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"sare:MicrobialProperty" -> "sare:WaterProperty" [ label = "rdfs:subClassOf" ];
+	"base:MicroLevelIndicator" -> "base:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"base:MacroLevelIndicator" -> "base:KeyPerformanceIndicatorLevel" [ label = "rdfs:subClassOf" ];
+	"base:SemiSolidMaterial" -> "base:Material" [ label = "rdfs:subClassOf" ];
+	"base:SolutionProvider" -> "base:Industry" [ label = "rdfs:subClassOf" ];
+	"base:MaterialProperty" -> "core:Property" [ label = "rdfs:subClassOf" ];
+	"sare:AcceptabilityProperty" -> "sare:WaterProperty" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Interval" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"sare:BacterialProperty" -> "sare:MicrobialProperty" [ label = "rdfs:subClassOf" ];
+	"base:SolidMaterial" -> "base:Material" [ label = "rdfs:subClassOf" ];
+	"base:Air" -> "base:Resource" [ label = "rdfs:subClassOf" ];
+	"base:Air" -> "core:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+	"sare:WaterProperty" -> "base:WaterProperty" [ label = "rdfs:subClassOf" ];
+	"base:ResourceOutput" -> "https://saref.etsi.org/saref4city/KeyPerformanceIndicator" [ label = "rdfs:subClassOf" ];
+	"sare:WaterFlowProperty" -> "base:WaterProperty" [ label = "rdfs:subClassOf" ];
+
+}

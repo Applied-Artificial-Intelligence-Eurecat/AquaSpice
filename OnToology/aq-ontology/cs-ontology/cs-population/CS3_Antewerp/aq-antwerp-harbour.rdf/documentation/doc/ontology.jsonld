@@ -1,0 +1,2151 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/isKPIOf"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/assesses"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/isAssessedBy"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/isDerivedFrom"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/quantifiesKPI"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/refersToTime"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/hasCreationDate"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/hasExpirationDate"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/hasLastUpdateDate"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasValue"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasProperty"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/wsis/Process"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/wsis/hasProcess"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/wsis/isKPILevel"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/wsis/Technology"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/wsis/usesTechnology"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToProperty"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasuredIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasTimestamp"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/hasValue"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/core/relatesToMeasurement"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalDuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/hasCalculationPeriod"
+  } ]
+}, {
+  "@id" : "http://org.semanticweb.owlapi/error#Error1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Geometry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spatial object"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasGeometry"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sfContains"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sfWithin"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/sf#Point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/sf#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ]
+}, {
+  "@id" : "http://www.opengis.net/ont/sf#Polygon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.opengis.net/ont/sf#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Polygon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#DayOfWeek",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The day of week."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2006/time#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Day of week"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with zero extent or duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2006/time#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Instant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with an extent or duration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2006/time#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalDuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Time extent; duration of a time interval separate from its particular start position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2006/time#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temporal duration"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal interval or instant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/2006/time#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temporal entity"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/ConductivityMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "https://saref.etsi.org/core/isMeasuredIn" : [ {
+    "@id" : "https://saref.etsi.org/core/microSiemmensPerCm"
+  } ],
+  "https://saref.etsi.org/core/relatesToProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Conductivity"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://org.semanticweb.owlapi/error#Error1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An aspect of an entity that can be observable by a sensor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/TemperatureMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "https://saref.etsi.org/core/isMeasuredIn" : [ {
+    "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius"
+  } ],
+  "https://saref.etsi.org/core/relatesToProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/FlowTemperature"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit of measure"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/WaterLevelMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "https://saref.etsi.org/core/isMeasuredIn" : [ {
+    "@id" : "https://saref.etsi.org/core/mTAW"
+  } ],
+  "https://saref.etsi.org/core/relatesToProperty" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/waterLevel"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has description"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has measurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://saref.etsi.org/core/isMeasurementOf"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has name"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has property"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasTimestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has timestamp"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has value"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is measured in"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is measurement of"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/mTAW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "mTAW"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/makesMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://saref.etsi.org/core/microSiemmensPerCm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "μS/cm"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relates to measurement"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/core/relatesToProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/core/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "relates to property"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Key Performance Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://fiware-datamodels.readthedocs.io/en/latest/KeyPerformanceIndicator/doc/spec/index.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Key Performance Indicator assessment represents the assessment of a KPI calculated by a given agent in a given time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Key performance indicator assessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/assesses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assesses"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/isAssessedBy"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/hasCalculationPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has calculation period"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/hasCreationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has creation date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/hasExpirationDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has expiration date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/hasKPI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has key performance indicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/isKPIOf"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/hasLastUpdateDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has last update date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/isAssessedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is assessed by"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/isDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is derived from"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/isKPIOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is key performance indicator of"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/quantifiesKPI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quantifies KPI"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4city/refersToTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "refers to time"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/AlbertCanalWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Aluminium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Ammonium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/BacterialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/MicrobialProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Cadmium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Chloride",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Conductivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Copper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/EscherichiaColi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/BacterialProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/FlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterFlowProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/FlowTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterFlowProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Iron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Lead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Manganese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/MicrobialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Nickel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Nitrate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Nitrite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Sodium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Sulphate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/TotalDissolvedSolids",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/TotalSuspendedSolids",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Turbidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/Water",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class is used to define a particular quantity or body of water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/Resource"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/WaterFlowProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/WaterProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/WaterPortToCanal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/WaterProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class to group those properties related to the water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/WaterProperty"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/hasPhenomenonTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The time for which the value of a measurement applies to the feature of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has phenomenon time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/isDesignedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The type of water for which an infrastructure is designed for."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is designed for"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/isIntendedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The intended use of the infrastructure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is intended for"
+  } ]
+}, {
+  "@id" : "https://saref.etsi.org/saref4watr/waterLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+  } ],
+  "https://saref.etsi.org/core/hasDescription" : [ {
+    "@value" : "\n        Water level refers to the height of the water surface in relation to a reference point, such as sea level or a fixed point on a shoreline. Water levels can change due to a variety of factors, including tides, weather, and human activities. The measurement of water level is important for many activities such as navigation, flood control, and monitoring of water resources. There are different ways to measure water level, such as using a staff gauge, a pressure transducer or a radar sensor, depending on the location, the precision and the frequency of measurements required.\n        "
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "waterLevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Aitor Corchero"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "An ontology as a catalyst for Water Smart Industrial Symbiosis (WSIS), in which water/wastewater plays a key role within a dynamic socio-economic and business oriented industrial ecosystem"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-03-05"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opensource.org/licenses/ISC"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2022-03-05"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://ultimatewater.eu/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://github.com/ULTIMATE-DIGITAL-TOOLS/ontology"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Water Smart Industrial Symbiosis (WSIS) Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "wsis"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/def/wsis/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/def/wsis/v0.0.1/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.0.2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Air",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Air based resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Air"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/AirProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class to group those properties related to the air resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Air property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/AlbertCanal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/Technology"
+  } ],
+  "https://saref.etsi.org/core/hasDescription" : [ {
+    "@value" : "Albert Canal"
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "Albert Canal"
+  } ],
+  "https://w3id.org/def/wsis/canProcess" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterPortToCanal"
+  } ],
+  "https://w3id.org/def/wsis/generates" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AlbertCanalWater"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/AntwerpHarbour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/Industry"
+  } ],
+  "https://saref.etsi.org/core/hasDescription" : [ {
+    "@value" : "\n        The Port of Antwerp is the leading European petrochemical and chemical cluster in Europe and home to key industrial players in chemicals production. Several of these chemical companies are large water users that require water for processing products, cooling, and steam production. The freshwater source that connects to the Antwerp harbour is the Albert Canal. The Albert Canal on its turn receives water from the river Meuse. Freshwater of the river Meuse transported through the Albert Canal plays a key role in the Flanders’ navigation transport and water use for economic activities. Water is transported from the river Meuse towards the Antwerp harbour through shipping transport and sluice activities. Drinking water company Water-link abstracts water from the Albert Canal for drinking water production.\n    "
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "Antwerp-Harbour"
+  } ],
+  "https://w3id.org/def/wsis/generates" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/WaterPortToCanal"
+  } ],
+  "https://w3id.org/def/wsis/hasOwner" : [ {
+    "@value" : "Port of Antwerp"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Device"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/EmissionsProduced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceDisposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Emisions Produced (e.g. CO2). "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Emissions Produced"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Energy based resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/EnergyConsumptionIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Energy Consumption per unit key product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy Consumption Indicator"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Energy"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Energy"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/EnergyProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class to group those properties related to the energy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Energy property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/EnvironmentalImpacts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicators that refers to economic impacts."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicators that refers to environmental impacts."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicators that refers to social impacts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Economic Impacts"
+  }, {
+    "@language" : "en",
+    "@value" : "Environmental Impacts"
+  }, {
+    "@language" : "en",
+    "@value" : "Social Impacts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Industry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "An industrial infrastructure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Industry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/IndustryCluster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Industry Cluster"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Level of the KPI considering the geographical impact."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Key Performance Indicator Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "evaluate, monitor, and improve policies regarding environmental, economic, and/or social concerns."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Macro Level Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Material",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material based resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/MaterialProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Class to group those properties related to the material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Material property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/MeasurementStation#M1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/Device"
+  } ],
+  "https://saref.etsi.org/core/hasName" : [ {
+    "@value" : "MonitoringStation_1"
+  } ],
+  "https://saref.etsi.org/core/makesMeasurement" : [ {
+    "@id" : "https://saref.etsi.org/core/ConductivityMeasurement"
+  }, {
+    "@id" : "https://saref.etsi.org/core/TemperatureMeasurement"
+  }, {
+    "@id" : "https://saref.etsi.org/core/WaterLevelMeasurement"
+  } ],
+  "https://w3id.org/def/wsis/id" : [ {
+    "@value" : "https://cs3.rtm.aquaspice.eurecatprojects.com/broker/ngsi-ld/v1/entities?id=urn:ngsi-ld:AquaSpice:measurementStation:North"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measure physical properties from the technological cycles with full or partial LCT approach, e.g. the indicator Reusability/Recyclability/Recoverability (RRR) in terms of mass includes the potential rate to reuse (products, components), recycle (materials), and recover (energy)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Meso Level Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "The indicators measure gate-to-gate performance from the technological cycles without Life Cycle Thinking approach, e.g. Recycling Rate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Micro Level Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/OutputEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Output of energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output Energy"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://w3id.org/def/wsis/Energy"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://w3id.org/def/wsis/Energy"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/OutputLand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Output of Land"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output Land"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/OutputMainMineralResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Output of the main mineral reosurce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output Main Mineral Resource"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://w3id.org/def/wsis/Material"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://w3id.org/def/wsis/Material"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/OutputWaterResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceOutput"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Output of Water Resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output Water Resource"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "A process that involves the industry operation."
+  }, {
+    "@language" : "en",
+    "@value" : "Technology used in the different industrial processes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Process"
+  }, {
+    "@language" : "en",
+    "@value" : "Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/RawWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Raw Water type of water."
+  }, {
+    "@language" : "en",
+    "@value" : "Waste Water type of water."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Raw Water"
+  }, {
+    "@language" : "en",
+    "@value" : "Waste Water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/RecyclingRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceUtilization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to recycling rate of solid waste or wastewater"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recycling Rate"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/RecyclingRateMaterials",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceUtilization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to recycling rate of materials. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recycling Rate Materials"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Resources consumed/generated by the industries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceConsumer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "An industry that consumes several resources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Consumer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Industry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicators that refers to the rate of consumption of water, enervy or material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Consumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceDisposal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicators that refers to the rate of disposal in relation to pollution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Disposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicators that refers to the rate of output of water, enervy or material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceProducer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "An industry that produces several resources"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Industry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/ResourceUtilization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicators that refers to the rate of utilization of water, enervy or material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Resource Utilization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Salt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Salt based material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Salt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Material"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/SemiSolidMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Semi Solid Material based resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Semi Solid Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Material"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/SolidMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "Solid Material based resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solid Material"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Material"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/SolutionProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment" : [ {
+    "@language" : "en",
+    "@value" : "An industry in charge of providing specific solutions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solution Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/Industry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Technology is the application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "https://w3id.org/def/wsis/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Technology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/TotalAmountSolidWaste",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceDisposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to total amount of solid waste for disposal. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total Amount Solid Waste"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/TotalAountWastewaterDischarge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceDisposal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to total amount of wastewater discharge. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total Aount Wastewater Discharge"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Material"
+  }, {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/UpstreamAreaAlbertCanal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/Technology"
+  } ],
+  "https://w3id.org/def/wsis/canProcess" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/AlbertCanalWater"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/WaterConsumptionIndicator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceConsumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to Water Consumption per unit key product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water Consumption Indicator"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/WaterProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://saref.etsi.org/core/Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/WaterReuse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/wsis/ResourceUtilization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicator related to water reuse ratio. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water Reuse"
+  } ],
+  "https://saref.etsi.org/saref4watr/isDesignedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://saref.etsi.org/saref4watr/isIntendedFor" : [ {
+    "@id" : "https://saref.etsi.org/saref4watr/Water"
+  } ],
+  "https://w3id.org/def/wsis/hasKPILevel" : [ {
+    "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+  }, {
+    "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/canProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "canProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/generates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "generates"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/hasKPILevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasKPILevel"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/wsis/isKPILevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Owner"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/hasProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasProcess"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/isKPILevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isKPILevel"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isPartOf"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/wsis/usesTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/def/wsis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "usesTechnology"
+  } ]
+} ]
