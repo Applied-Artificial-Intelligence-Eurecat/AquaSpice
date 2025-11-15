@@ -1,0 +1,1084 @@
+<https://w3id.org/def/wsis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/wsis> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/wsis/v0.0.1/> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/creator> "Aitor Corchero" .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/description> "An ontology as a catalyst for Water Smart Industrial Symbiosis (WSIS), in which water/wastewater plays a key role within a dynamic socio-economic and business oriented industrial ecosystem"@en .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/issued> "2022-03-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/license> <https://opensource.org/licenses/ISC> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/modified> "2022-03-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/publisher> <https://ultimatewater.eu/> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/source> <https://github.com/ULTIMATE-DIGITAL-TOOLS/ontology> .
+<https://w3id.org/def/wsis> <http://purl.org/dc/terms/title> "Water Smart Industrial Symbiosis (WSIS) Ontology"@en .
+<https://w3id.org/def/wsis> <http://purl.org/vocab/vann/preferredNamespacePrefix> "wsis" .
+<https://w3id.org/def/wsis> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/def/wsis/" .
+<https://w3id.org/def/wsis> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.2" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#comment
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#qualifiedCardinality
+<http://www.w3.org/2002/07/owl#qualifiedCardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#label> "sfContains"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#label> "sfWithin"@en .
+# 
+# https://saref.etsi.org/core/hasMeasurement
+<https://saref.etsi.org/core/hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/hasMeasurement> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/core/isMeasurementOf> .
+<https://saref.etsi.org/core/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement"@en .
+# 
+# https://saref.etsi.org/core/hasProperty
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property"@en .
+# 
+# https://saref.etsi.org/core/isMeasuredIn
+<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in"@en .
+# 
+# https://saref.etsi.org/core/isMeasurementOf
+<https://saref.etsi.org/core/isMeasurementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/isMeasurementOf> <http://www.w3.org/2000/01/rdf-schema#label> "is measurement of"@en .
+# 
+# https://saref.etsi.org/core/makesMeasurement
+<https://saref.etsi.org/core/makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://saref.etsi.org/core/relatesToMeasurement
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement"@en .
+# 
+# https://saref.etsi.org/core/relatesToProperty
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relates to property"@en .
+# 
+# https://saref.etsi.org/saref4city/assesses
+<https://saref.etsi.org/saref4city/assesses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/assesses> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/saref4city/isAssessedBy> .
+<https://saref.etsi.org/saref4city/assesses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/assesses> <http://www.w3.org/2000/01/rdf-schema#label> "assesses"@en .
+# 
+# https://saref.etsi.org/saref4city/hasCalculationPeriod
+<https://saref.etsi.org/saref4city/hasCalculationPeriod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/hasCalculationPeriod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/hasCalculationPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "has calculation period"@en .
+# 
+# https://saref.etsi.org/saref4city/hasKPI
+<https://saref.etsi.org/saref4city/hasKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/hasKPI> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/saref4city/isKPIOf> .
+<https://saref.etsi.org/saref4city/hasKPI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/hasKPI> <http://www.w3.org/2000/01/rdf-schema#label> "has key performance indicator"@en .
+# 
+# https://saref.etsi.org/saref4city/isAssessedBy
+<https://saref.etsi.org/saref4city/isAssessedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/isAssessedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is assessed by"@en .
+# 
+# https://saref.etsi.org/saref4city/isDerivedFrom
+<https://saref.etsi.org/saref4city/isDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/isDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "is derived from"@en .
+# 
+# https://saref.etsi.org/saref4city/isKPIOf
+<https://saref.etsi.org/saref4city/isKPIOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/isKPIOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/isKPIOf> <http://www.w3.org/2000/01/rdf-schema#label> "is key performance indicator of"@en .
+# 
+# https://saref.etsi.org/saref4city/quantifiesKPI
+<https://saref.etsi.org/saref4city/quantifiesKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/quantifiesKPI> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/quantifiesKPI> <http://www.w3.org/2000/01/rdf-schema#label> "quantifies KPI"@en .
+# 
+# https://saref.etsi.org/saref4city/refersToTime
+<https://saref.etsi.org/saref4city/refersToTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4city/refersToTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/refersToTime> <http://www.w3.org/2000/01/rdf-schema#label> "refers to time"@en .
+# 
+# https://saref.etsi.org/saref4watr/hasPhenomenonTime
+<https://saref.etsi.org/saref4watr/hasPhenomenonTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4watr/hasPhenomenonTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/saref4watr/hasPhenomenonTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#TemporalEntity> .
+<https://saref.etsi.org/saref4watr/hasPhenomenonTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time for which the value of a measurement applies to the feature of interest."@en .
+<https://saref.etsi.org/saref4watr/hasPhenomenonTime> <http://www.w3.org/2000/01/rdf-schema#label> "has phenomenon time"@en .
+# 
+# https://saref.etsi.org/saref4watr/isDesignedFor
+<https://saref.etsi.org/saref4watr/isDesignedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4watr/isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of water for which an infrastructure is designed for."@en .
+<https://saref.etsi.org/saref4watr/isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#label> "is designed for"@en .
+# 
+# https://saref.etsi.org/saref4watr/isIntendedFor
+<https://saref.etsi.org/saref4watr/isIntendedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/saref4watr/isIntendedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended use of the infrastructure."@en .
+<https://saref.etsi.org/saref4watr/isIntendedFor> <http://www.w3.org/2000/01/rdf-schema#label> "is intended for"@en .
+# 
+# https://w3id.org/def/wsis/canProcess
+<https://w3id.org/def/wsis/canProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/canProcess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/canProcess> <http://www.w3.org/2000/01/rdf-schema#label> "canProcess"@en .
+# 
+# https://w3id.org/def/wsis/generates
+<https://w3id.org/def/wsis/generates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/generates> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/generates> <http://www.w3.org/2000/01/rdf-schema#label> "generates"@en .
+# 
+# https://w3id.org/def/wsis/hasKPILevel
+<https://w3id.org/def/wsis/hasKPILevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/hasKPILevel> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/def/wsis/isKPILevel> .
+<https://w3id.org/def/wsis/hasKPILevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/hasKPILevel> <http://www.w3.org/2000/01/rdf-schema#label> "hasKPILevel"@en .
+# 
+# https://w3id.org/def/wsis/hasProcess
+<https://w3id.org/def/wsis/hasProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/hasProcess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/hasProcess> <http://www.w3.org/2000/01/rdf-schema#label> "hasProcess"@en .
+# 
+# https://w3id.org/def/wsis/isKPILevel
+<https://w3id.org/def/wsis/isKPILevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/isKPILevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/isKPILevel> <http://www.w3.org/2000/01/rdf-schema#label> "isKPILevel"@en .
+# 
+# https://w3id.org/def/wsis/isPartOf
+<https://w3id.org/def/wsis/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/wsis/isPartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "isPartOf"@en .
+# 
+# https://w3id.org/def/wsis/usesTechnology
+<https://w3id.org/def/wsis/usesTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/wsis/usesTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/def/wsis/usesTechnology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/usesTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "usesTechnology"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#asWKT
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://saref.etsi.org/core/hasDescription
+<https://saref.etsi.org/core/hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description"@en .
+# 
+# https://saref.etsi.org/core/hasName
+<https://saref.etsi.org/core/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name"@en .
+# 
+# https://saref.etsi.org/core/hasTimestamp
+<https://saref.etsi.org/core/hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp"@en .
+# 
+# https://saref.etsi.org/core/hasValue
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
+# 
+# https://saref.etsi.org/saref4city/hasCreationDate
+<https://saref.etsi.org/saref4city/hasCreationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/saref4city/hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/saref4city/hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#label> "has creation date"@en .
+# 
+# https://saref.etsi.org/saref4city/hasExpirationDate
+<https://saref.etsi.org/saref4city/hasExpirationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/saref4city/hasExpirationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/saref4city/hasExpirationDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/hasExpirationDate> <http://www.w3.org/2000/01/rdf-schema#label> "has expiration date"@en .
+# 
+# https://saref.etsi.org/saref4city/hasLastUpdateDate
+<https://saref.etsi.org/saref4city/hasLastUpdateDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/saref4city/hasLastUpdateDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/saref4city/hasLastUpdateDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/hasLastUpdateDate> <http://www.w3.org/2000/01/rdf-schema#label> "has last update date"@en .
+# 
+# https://w3id.org/def/wsis/hasOwner
+<https://w3id.org/def/wsis/hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/wsis/hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "has Owner"@en .
+# 
+# https://w3id.org/def/wsis/id
+<https://w3id.org/def/wsis/id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/UnitOfMeasure> .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature"@en .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+# 
+# http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/geosparql#> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial object"@en .
+# 
+# http://www.opengis.net/ont/sf#Point
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/sf#> .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point"@en .
+# 
+# http://www.opengis.net/ont/sf#Polygon
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.opengis.net/ont/sf#> .
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/2000/01/rdf-schema#label> "Polygon"@en .
+# 
+# http://www.w3.org/2006/time#DayOfWeek
+<http://www.w3.org/2006/time#DayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#comment> "The day of week."@en .
+<http://www.w3.org/2006/time#DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://www.w3.org/2006/time#DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "Day of week"@en .
+# 
+# http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with zero extent or duration"@en .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "Instant"@en .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration."@en .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval"@en .
+# 
+# http://www.w3.org/2006/time#TemporalDuration
+<http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Time extent; duration of a time interval separate from its particular start position"@en .
+<http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal duration"@en .
+# 
+# http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal entity"@en .
+# 
+# https://saref.etsi.org/core/Device
+<https://saref.etsi.org/core/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/core/FeatureOfInterest
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasMeasurement> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+# 
+# https://saref.etsi.org/core/Measurement
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/UnitOfMeasure> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Property> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/UnitOfMeasure> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <https://saref.etsi.org/core/Property> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToProperty> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasTimestamp> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
+# https://saref.etsi.org/core/Property
+<https://saref.etsi.org/core/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/relatesToMeasurement> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of an entity that can be observable by a sensor."@en .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+# 
+# https://saref.etsi.org/core/UnitOfMeasure
+<https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."@en .
+<https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure"@en .
+# 
+# https://saref.etsi.org/saref4city/Agent
+<https://saref.etsi.org/saref4city/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://saref.etsi.org/saref4city/KeyPerformanceIndicator
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#TemporalDuration> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/hasCalculationPeriod> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/isKPIOf> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE)"@en .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Key Performance Indicator"@en .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://fiware-datamodels.readthedocs.io/en/latest/KeyPerformanceIndicator/doc/spec/index.html> .
+# 
+# https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/UnitOfMeasure> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/isMeasuredIn> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/FeatureOfInterest> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/assesses> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref4city/Agent> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/isAssessedBy> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/core/Measurement> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/isDerivedFrom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/quantifiesKPI> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2006/time#TemporalEntity> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/refersToTime> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/hasCreationDate> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/hasExpirationDate> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/saref4city/hasLastUpdateDate> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasValue> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "A Key Performance Indicator assessment represents the assessment of a KPI calculated by a given agent in a given time."@en .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/saref4city/> .
+<https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Key performance indicator assessment"@en .
+# 
+# https://saref.etsi.org/saref4watr/AcceptabilityProperty
+<https://saref.etsi.org/saref4watr/AcceptabilityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/AcceptabilityProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4watr/WaterProperty> .
+# 
+# https://saref.etsi.org/saref4watr/BacterialProperty
+<https://saref.etsi.org/saref4watr/BacterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/BacterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4watr/MicrobialProperty> .
+# 
+# https://saref.etsi.org/saref4watr/ChemicalProperty
+<https://saref.etsi.org/saref4watr/ChemicalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/ChemicalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4watr/WaterProperty> .
+# 
+# https://saref.etsi.org/saref4watr/MicrobialProperty
+<https://saref.etsi.org/saref4watr/MicrobialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/MicrobialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4watr/WaterProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Water
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Resource> .
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref4watr/WaterProperty> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core/hasProperty> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# https://saref.etsi.org/saref4watr/WaterFlowProperty
+<https://saref.etsi.org/saref4watr/WaterFlowProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/WaterFlowProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/WaterProperty> .
+# 
+# https://saref.etsi.org/saref4watr/WaterProperty
+<https://saref.etsi.org/saref4watr/WaterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4watr/WaterProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/WaterProperty> .
+<https://saref.etsi.org/saref4watr/WaterProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to group those properties related to the water."@en .
+<https://saref.etsi.org/saref4watr/WaterProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Water property"@en .
+# 
+# https://w3id.org/def/wsis/Air
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Resource> .
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Air based resource."@en .
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Air> <http://www.w3.org/2000/01/rdf-schema#label> "Air"@en .
+# 
+# https://w3id.org/def/wsis/AirProperty
+<https://w3id.org/def/wsis/AirProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/AirProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/def/wsis/AirProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to group those properties related to the air resource."@en .
+<https://w3id.org/def/wsis/AirProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Air property"@en .
+# 
+# https://w3id.org/def/wsis/Device
+<https://w3id.org/def/wsis/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+# 
+# https://w3id.org/def/wsis/Energy
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Resource> .
+# 
+# https://w3id.org/def/wsis/EnergyProperty
+<https://w3id.org/def/wsis/EnergyProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/def/wsis/EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to group those properties related to the energy."@en .
+<https://w3id.org/def/wsis/EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Energy property"@en .
+# 
+# https://w3id.org/def/wsis/EnvironmentalImpacts
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to economic impacts."@en .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to environmental impacts."@en .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to social impacts."@en .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/2000/01/rdf-schema#label> "Economic Impacts"@en .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Impacts"@en .
+<https://w3id.org/def/wsis/EnvironmentalImpacts> <http://www.w3.org/2000/01/rdf-schema#label> "Social Impacts"@en .
+# 
+# https://w3id.org/def/wsis/Industry
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/wsis/Process> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/wsis/hasProcess> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "An industrial infrastructure"@en .
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Industry> <http://www.w3.org/2000/01/rdf-schema#label> "Industry"@en .
+# 
+# https://w3id.org/def/wsis/IndustryCluster
+<https://w3id.org/def/wsis/IndustryCluster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/IndustryCluster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/def/wsis/IndustryCluster> <http://www.w3.org/2000/01/rdf-schema#label> "Industry Cluster"@en .
+# 
+# https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel
+<https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/wsis/isKPILevel> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Level of the KPI considering the geographical impact."@en .
+<https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Key Performance Indicator Level"@en .
+# 
+# https://w3id.org/def/wsis/MacroLevelIndicator
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> .
+# 
+# https://w3id.org/def/wsis/Material
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/FeatureOfInterest> .
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Resource> .
+# 
+# https://w3id.org/def/wsis/MaterialProperty
+<https://w3id.org/def/wsis/MaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+<https://w3id.org/def/wsis/MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Class to group those properties related to the material."@en .
+<https://w3id.org/def/wsis/MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material property"@en .
+# 
+# https://w3id.org/def/wsis/MesoLevelIndicator
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> .
+# 
+# https://w3id.org/def/wsis/MicroLevelIndicator
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel> .
+# 
+# https://w3id.org/def/wsis/Process
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/wsis/Technology> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/wsis/usesTechnology> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "A process that involves the industry operation."@en .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Technology used in the different industrial processes."@en .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/2000/01/rdf-schema#label> "Process"@en .
+<https://w3id.org/def/wsis/Process> <http://www.w3.org/2000/01/rdf-schema#label> "Technology"@en .
+# 
+# https://w3id.org/def/wsis/RawWater
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Raw Water type of water."@en .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Waste Water type of water."@en .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/2000/01/rdf-schema#label> "Raw Water"@en .
+<https://w3id.org/def/wsis/RawWater> <http://www.w3.org/2000/01/rdf-schema#label> "Waste Water"@en .
+# 
+# https://w3id.org/def/wsis/Resource
+<https://w3id.org/def/wsis/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Resources consumed/generated by the industries."@en .
+<https://w3id.org/def/wsis/Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# 
+# https://w3id.org/def/wsis/ResourceConsumer
+<https://w3id.org/def/wsis/ResourceConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceConsumer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Industry> .
+<https://w3id.org/def/wsis/ResourceConsumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "An industry that consumes several resources"@en .
+<https://w3id.org/def/wsis/ResourceConsumer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceConsumer> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Consumer"@en .
+# 
+# https://w3id.org/def/wsis/ResourceConsumption
+<https://w3id.org/def/wsis/ResourceConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+<https://w3id.org/def/wsis/ResourceConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to the rate of consumption of water, enervy or material."@en .
+<https://w3id.org/def/wsis/ResourceConsumption> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Consumption"@en .
+# 
+# https://w3id.org/def/wsis/ResourceDisposal
+<https://w3id.org/def/wsis/ResourceDisposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceDisposal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+<https://w3id.org/def/wsis/ResourceDisposal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to the rate of disposal in relation to pollution."@en .
+<https://w3id.org/def/wsis/ResourceDisposal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceDisposal> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Disposal"@en .
+# 
+# https://w3id.org/def/wsis/ResourceOutput
+<https://w3id.org/def/wsis/ResourceOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceOutput> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+<https://w3id.org/def/wsis/ResourceOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to the rate of output of water, enervy or material."@en .
+<https://w3id.org/def/wsis/ResourceOutput> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceOutput> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Output"@en .
+# 
+# https://w3id.org/def/wsis/ResourceProducer
+<https://w3id.org/def/wsis/ResourceProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceProducer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Industry> .
+<https://w3id.org/def/wsis/ResourceProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "An industry that produces several resources"@en .
+<https://w3id.org/def/wsis/ResourceProducer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceProducer> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Producer"@en .
+# 
+# https://w3id.org/def/wsis/ResourceUtilization
+<https://w3id.org/def/wsis/ResourceUtilization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/ResourceUtilization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/saref4city/KeyPerformanceIndicator> .
+<https://w3id.org/def/wsis/ResourceUtilization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Indicators that refers to the rate of utilization of water, enervy or material."@en .
+<https://w3id.org/def/wsis/ResourceUtilization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/ResourceUtilization> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Utilization"@en .
+# 
+# https://w3id.org/def/wsis/Salt
+<https://w3id.org/def/wsis/Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Salt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Material> .
+<https://w3id.org/def/wsis/Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Salt based material."@en .
+<https://w3id.org/def/wsis/Salt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Salt> <http://www.w3.org/2000/01/rdf-schema#label> "Salt"@en .
+# 
+# https://w3id.org/def/wsis/SemiSolidMaterial
+<https://w3id.org/def/wsis/SemiSolidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/SemiSolidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Material> .
+<https://w3id.org/def/wsis/SemiSolidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Semi Solid Material based resource."@en .
+<https://w3id.org/def/wsis/SemiSolidMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/SemiSolidMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Semi Solid Material"@en .
+# 
+# https://w3id.org/def/wsis/SolidMaterial
+<https://w3id.org/def/wsis/SolidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Material> .
+<https://w3id.org/def/wsis/SolidMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Solid Material based resource."@en .
+<https://w3id.org/def/wsis/SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/SolidMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "Solid Material"@en .
+# 
+# https://w3id.org/def/wsis/SolutionProvider
+<https://w3id.org/def/wsis/SolutionProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/SolutionProvider> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/wsis/Industry> .
+<https://w3id.org/def/wsis/SolutionProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "An industry in charge of providing specific solutions"@en .
+<https://w3id.org/def/wsis/SolutionProvider> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/SolutionProvider> <http://www.w3.org/2000/01/rdf-schema#label> "Solution Provider"@en .
+# 
+# https://w3id.org/def/wsis/Technology
+<https://w3id.org/def/wsis/Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/Technology> <http://www.w3.org/2000/01/rdf-schema#comment> "Technology is the application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment"@en .
+<https://w3id.org/def/wsis/Technology> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/wsis/"@en .
+<https://w3id.org/def/wsis/Technology> <http://www.w3.org/2000/01/rdf-schema#label> "Technology"@en .
+# 
+# https://w3id.org/def/wsis/WaterProperty
+<https://w3id.org/def/wsis/WaterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/wsis/WaterProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Property> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius
+<http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/UnitOfMeasure> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerYear
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetrePerYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre
+<http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerLitre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre> .
+# 
+# https://saref.etsi.org/core/ConductivityMeasurement
+<https://saref.etsi.org/core/ConductivityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/core/ConductivityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/ConductivityMeasurement> <https://saref.etsi.org/core/isMeasuredIn> <https://saref.etsi.org/core/microSiemmensPerCm> .
+<https://saref.etsi.org/core/ConductivityMeasurement> <https://saref.etsi.org/core/relatesToProperty> <https://saref.etsi.org/saref4watr/Conductivity> .
+# 
+# https://saref.etsi.org/core/TemperatureMeasurement
+<https://saref.etsi.org/core/TemperatureMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/core/TemperatureMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/TemperatureMeasurement> <https://saref.etsi.org/core/isMeasuredIn> <http://www.ontology-of-units-of-measure.org/resource/om-2/centidegreeCelsius> .
+<https://saref.etsi.org/core/TemperatureMeasurement> <https://saref.etsi.org/core/relatesToProperty> <https://saref.etsi.org/saref4watr/FlowTemperature> .
+# 
+# https://saref.etsi.org/core/WaterLevelMeasurement
+<https://saref.etsi.org/core/WaterLevelMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/core/WaterLevelMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/Measurement> .
+<https://saref.etsi.org/core/WaterLevelMeasurement> <https://saref.etsi.org/core/isMeasuredIn> <https://saref.etsi.org/core/mTAW> .
+<https://saref.etsi.org/core/WaterLevelMeasurement> <https://saref.etsi.org/core/relatesToProperty> <https://saref.etsi.org/saref4watr/waterLevel> .
+# 
+# https://saref.etsi.org/core/mTAW
+<https://saref.etsi.org/core/mTAW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/core/mTAW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/UnitOfMeasure> .
+<https://saref.etsi.org/core/mTAW> <https://saref.etsi.org/core/hasName> "mTAW" .
+# 
+# https://saref.etsi.org/core/microSiemmensPerCm
+<https://saref.etsi.org/core/microSiemmensPerCm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/core/microSiemmensPerCm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core/UnitOfMeasure> .
+<https://saref.etsi.org/core/microSiemmensPerCm> <https://saref.etsi.org/core/hasName> "μS/cm" .
+# 
+# https://saref.etsi.org/saref4watr/AlbertCanalWater
+<https://saref.etsi.org/saref4watr/AlbertCanalWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/AlbertCanalWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/Water> .
+# 
+# https://saref.etsi.org/saref4watr/Aluminium
+<https://saref.etsi.org/saref4watr/Aluminium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Aluminium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Ammonium
+<https://saref.etsi.org/saref4watr/Ammonium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Ammonium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Cadmium
+<https://saref.etsi.org/saref4watr/Cadmium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Cadmium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Chloride
+<https://saref.etsi.org/saref4watr/Chloride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Chloride> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Conductivity
+<https://saref.etsi.org/saref4watr/Conductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Conductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/AcceptabilityProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Copper
+<https://saref.etsi.org/saref4watr/Copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Energy
+<https://saref.etsi.org/saref4watr/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://saref.etsi.org/saref4watr/EscherichiaColi
+<https://saref.etsi.org/saref4watr/EscherichiaColi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/EscherichiaColi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/BacterialProperty> .
+# 
+# https://saref.etsi.org/saref4watr/FlowRate
+<https://saref.etsi.org/saref4watr/FlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/FlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/WaterFlowProperty> .
+# 
+# https://saref.etsi.org/saref4watr/FlowTemperature
+<https://saref.etsi.org/saref4watr/FlowTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/FlowTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/WaterFlowProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Iron
+<https://saref.etsi.org/saref4watr/Iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Lead
+<https://saref.etsi.org/saref4watr/Lead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Lead> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Manganese
+<https://saref.etsi.org/saref4watr/Manganese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Manganese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Material
+<https://saref.etsi.org/saref4watr/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://saref.etsi.org/saref4watr/Nickel
+<https://saref.etsi.org/saref4watr/Nickel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Nickel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Nitrate
+<https://saref.etsi.org/saref4watr/Nitrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Nitrate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Nitrite
+<https://saref.etsi.org/saref4watr/Nitrite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Nitrite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Sodium
+<https://saref.etsi.org/saref4watr/Sodium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Sodium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Sulphate
+<https://saref.etsi.org/saref4watr/Sulphate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Sulphate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+# 
+# https://saref.etsi.org/saref4watr/TotalDissolvedSolids
+<https://saref.etsi.org/saref4watr/TotalDissolvedSolids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/TotalDissolvedSolids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/AcceptabilityProperty> .
+# 
+# https://saref.etsi.org/saref4watr/TotalSuspendedSolids
+<https://saref.etsi.org/saref4watr/TotalSuspendedSolids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/TotalSuspendedSolids> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/AcceptabilityProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Turbidity
+<https://saref.etsi.org/saref4watr/Turbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/Turbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/AcceptabilityProperty> .
+# 
+# https://saref.etsi.org/saref4watr/Water
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://saref.etsi.org/saref4watr/WaterPortToCanal
+<https://saref.etsi.org/saref4watr/WaterPortToCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/WaterPortToCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/Water> .
+# 
+# https://saref.etsi.org/saref4watr/waterLevel
+<https://saref.etsi.org/saref4watr/waterLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://saref.etsi.org/saref4watr/waterLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4watr/ChemicalProperty> .
+<https://saref.etsi.org/saref4watr/waterLevel> <https://saref.etsi.org/core/hasDescription> "\n        Water level refers to the height of the water surface in relation to a reference point, such as sea level or a fixed point on a shoreline. Water levels can change due to a variety of factors, including tides, weather, and human activities. The measurement of water level is important for many activities such as navigation, flood control, and monitoring of water resources. There are different ways to measure water level, such as using a staff gauge, a pressure transducer or a radar sensor, depending on the location, the precision and the frequency of measurements required.\n        " .
+<https://saref.etsi.org/saref4watr/waterLevel> <https://saref.etsi.org/core/hasName> "waterLevel" .
+# 
+# https://w3id.org/def/wsis/AlbertCanal
+<https://w3id.org/def/wsis/AlbertCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/AlbertCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/Technology> .
+<https://w3id.org/def/wsis/AlbertCanal> <https://w3id.org/def/wsis/canProcess> <https://saref.etsi.org/saref4watr/WaterPortToCanal> .
+<https://w3id.org/def/wsis/AlbertCanal> <https://w3id.org/def/wsis/generates> <https://saref.etsi.org/saref4watr/AlbertCanalWater> .
+<https://w3id.org/def/wsis/AlbertCanal> <https://saref.etsi.org/core/hasDescription> "Albert Canal" .
+<https://w3id.org/def/wsis/AlbertCanal> <https://saref.etsi.org/core/hasName> "Albert Canal" .
+# 
+# https://w3id.org/def/wsis/AntwerpHarbour
+<https://w3id.org/def/wsis/AntwerpHarbour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/AntwerpHarbour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/Industry> .
+<https://w3id.org/def/wsis/AntwerpHarbour> <https://w3id.org/def/wsis/generates> <https://saref.etsi.org/saref4watr/WaterPortToCanal> .
+<https://w3id.org/def/wsis/AntwerpHarbour> <https://saref.etsi.org/core/hasDescription> "\n        The Port of Antwerp is the leading European petrochemical and chemical cluster in Europe and home to key industrial players in chemicals production. Several of these chemical companies are large water users that require water for processing products, cooling, and steam production. The freshwater source that connects to the Antwerp harbour is the Albert Canal. The Albert Canal on its turn receives water from the river Meuse. Freshwater of the river Meuse transported through the Albert Canal plays a key role in the Flanders’ navigation transport and water use for economic activities. Water is transported from the river Meuse towards the Antwerp harbour through shipping transport and sluice activities. Drinking water company Water-link abstracts water from the Albert Canal for drinking water production.\n    " .
+<https://w3id.org/def/wsis/AntwerpHarbour> <https://saref.etsi.org/core/hasName> "Antwerp-Harbour" .
+<https://w3id.org/def/wsis/AntwerpHarbour> <https://w3id.org/def/wsis/hasOwner> "Port of Antwerp" .
+# 
+# https://w3id.org/def/wsis/EmissionsProduced
+<https://w3id.org/def/wsis/EmissionsProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/EmissionsProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceDisposal> .
+<https://w3id.org/def/wsis/EmissionsProduced> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/EmissionsProduced> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/EmissionsProduced> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/EmissionsProduced> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/EmissionsProduced> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/EmissionsProduced> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Emisions Produced (e.g. CO2). "@en .
+<https://w3id.org/def/wsis/EmissionsProduced> <http://www.w3.org/2000/01/rdf-schema#label> "Emissions Produced"@en .
+# 
+# https://w3id.org/def/wsis/Energy
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/wsis/EnergyConsumptionIndicator
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceConsumption> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Energy> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Energy> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Energy Consumption per unit key product"@en .
+<https://w3id.org/def/wsis/EnergyConsumptionIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Consumption Indicator"@en .
+# 
+# https://w3id.org/def/wsis/MacroLevelIndicator
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/wsis/Material
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/wsis/MesoLevelIndicator
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/wsis/MicroLevelIndicator
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/def/wsis/OutputEnergy
+<https://w3id.org/def/wsis/OutputEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/OutputEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceOutput> .
+<https://w3id.org/def/wsis/OutputEnergy> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://w3id.org/def/wsis/Energy> .
+<https://w3id.org/def/wsis/OutputEnergy> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://w3id.org/def/wsis/Energy> .
+<https://w3id.org/def/wsis/OutputEnergy> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputEnergy> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/OutputEnergy> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputEnergy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Output of energy"@en .
+<https://w3id.org/def/wsis/OutputEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Output Energy"@en .
+# 
+# https://w3id.org/def/wsis/OutputLand
+<https://w3id.org/def/wsis/OutputLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/OutputLand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceOutput> .
+<https://w3id.org/def/wsis/OutputLand> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/OutputLand> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/OutputLand> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputLand> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/OutputLand> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputLand> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Output of Land"@en .
+<https://w3id.org/def/wsis/OutputLand> <http://www.w3.org/2000/01/rdf-schema#label> "Output Land"@en .
+# 
+# https://w3id.org/def/wsis/OutputMainMineralResource
+<https://w3id.org/def/wsis/OutputMainMineralResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceOutput> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://w3id.org/def/wsis/Material> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://w3id.org/def/wsis/Material> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Output of the main mineral reosurce"@en .
+<https://w3id.org/def/wsis/OutputMainMineralResource> <http://www.w3.org/2000/01/rdf-schema#label> "Output Main Mineral Resource"@en .
+# 
+# https://w3id.org/def/wsis/OutputWaterResource
+<https://w3id.org/def/wsis/OutputWaterResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/OutputWaterResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceOutput> .
+<https://w3id.org/def/wsis/OutputWaterResource> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/OutputWaterResource> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/OutputWaterResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputWaterResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/OutputWaterResource> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/OutputWaterResource> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Output of Water Resource"@en .
+<https://w3id.org/def/wsis/OutputWaterResource> <http://www.w3.org/2000/01/rdf-schema#label> "Output Water Resource"@en .
+# 
+# https://w3id.org/def/wsis/RecyclingRate
+<https://w3id.org/def/wsis/RecyclingRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/RecyclingRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceUtilization> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRate> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to recycling rate of solid waste or wastewater"@en .
+<https://w3id.org/def/wsis/RecyclingRate> <http://www.w3.org/2000/01/rdf-schema#label> "Recycling Rate"@en .
+# 
+# https://w3id.org/def/wsis/RecyclingRateMaterials
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceUtilization> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to recycling rate of materials. "@en .
+<https://w3id.org/def/wsis/RecyclingRateMaterials> <http://www.w3.org/2000/01/rdf-schema#label> "Recycling Rate Materials"@en .
+# 
+# https://w3id.org/def/wsis/TotalAmountSolidWaste
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceDisposal> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to total amount of solid waste for disposal. "@en .
+<https://w3id.org/def/wsis/TotalAmountSolidWaste> <http://www.w3.org/2000/01/rdf-schema#label> "Total Amount Solid Waste"@en .
+# 
+# https://w3id.org/def/wsis/TotalAountWastewaterDischarge
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceDisposal> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Material> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to total amount of wastewater discharge. "@en .
+<https://w3id.org/def/wsis/TotalAountWastewaterDischarge> <http://www.w3.org/2000/01/rdf-schema#label> "Total Aount Wastewater Discharge"@en .
+# 
+# https://w3id.org/def/wsis/UpstreamAreaAlbertCanal
+<https://w3id.org/def/wsis/UpstreamAreaAlbertCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/UpstreamAreaAlbertCanal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/Technology> .
+<https://w3id.org/def/wsis/UpstreamAreaAlbertCanal> <https://w3id.org/def/wsis/canProcess> <https://saref.etsi.org/saref4watr/AlbertCanalWater> .
+# 
+# https://w3id.org/def/wsis/WaterConsumptionIndicator
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceConsumption> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to Water Consumption per unit key product"@en .
+<https://w3id.org/def/wsis/WaterConsumptionIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Water Consumption Indicator"@en .
+# 
+# https://w3id.org/def/wsis/WaterReuse
+<https://w3id.org/def/wsis/WaterReuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/WaterReuse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/ResourceUtilization> .
+<https://w3id.org/def/wsis/WaterReuse> <https://saref.etsi.org/saref4watr/isDesignedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/WaterReuse> <https://saref.etsi.org/saref4watr/isIntendedFor> <https://saref.etsi.org/saref4watr/Water> .
+<https://w3id.org/def/wsis/WaterReuse> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MacroLevelIndicator> .
+<https://w3id.org/def/wsis/WaterReuse> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MesoLevelIndicator> .
+<https://w3id.org/def/wsis/WaterReuse> <https://w3id.org/def/wsis/hasKPILevel> <https://w3id.org/def/wsis/MicroLevelIndicator> .
+<https://w3id.org/def/wsis/WaterReuse> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicator related to water reuse ratio. "@en .
+<https://w3id.org/def/wsis/WaterReuse> <http://www.w3.org/2000/01/rdf-schema#label> "Water Reuse"@en .
+# 
+# https://w3id.org/def/wsis/MeasurementStation#M1
+<https://w3id.org/def/wsis/MeasurementStation#M1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/wsis/Device> .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <https://saref.etsi.org/core/makesMeasurement> <https://saref.etsi.org/core/ConductivityMeasurement> .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <https://saref.etsi.org/core/makesMeasurement> <https://saref.etsi.org/core/TemperatureMeasurement> .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <https://saref.etsi.org/core/makesMeasurement> <https://saref.etsi.org/core/WaterLevelMeasurement> .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <https://saref.etsi.org/core/hasName> "MonitoringStation_1" .
+<https://w3id.org/def/wsis/MeasurementStation#M1> <https://w3id.org/def/wsis/id> "https://cs3.rtm.aquaspice.eurecatprojects.com/broker/ngsi-ld/v1/entities?id=urn:ngsi-ld:AquaSpice:measurementStation:North" .
+# 
+_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is used to define a particular quantity or body of water."@en .
+<https://saref.etsi.org/saref4watr/Water> <http://www.w3.org/2000/01/rdf-schema#label> "Water"@en .
+# 
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Energy based resource."@en .
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy"@en .
+# 
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "evaluate, monitor, and improve policies regarding environmental, economic, and/or social concerns."@en .
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/MacroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Macro Level Indicator"@en .
+# 
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Material based resource."@en .
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+# 
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "Measure physical properties from the technological cycles with full or partial LCT approach, e.g. the indicator Reusability/Recyclability/Recoverability (RRR) in terms of mass includes the potential rate to reuse (products, components), recycle (materials), and recover (energy)."@en .
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/MesoLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Meso Level Indicator"@en .
+# 
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#comment> "The indicators measure gate-to-gate performance from the technological cycles without Life Cycle Thinking approach, e.g. Recycling Rate."@en .
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/wsis> .
+<https://w3id.org/def/wsis/MicroLevelIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Micro Level Indicator"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

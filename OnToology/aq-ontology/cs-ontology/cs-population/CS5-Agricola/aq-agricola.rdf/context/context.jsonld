@@ -1,0 +1,343 @@
+{
+  "@context" : {
+    "isDerivedFrom" : {
+      "@id" : "https://saref.etsi.org/saref4city/isDerivedFrom",
+      "@type" : "@id"
+    },
+    "SolutionProvider" : {
+      "@id" : "https://w3id.org/def/wsis/SolutionProvider"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+    },
+    "Industry" : {
+      "@id" : "https://w3id.org/def/wsis/Industry"
+    },
+    "ChemicalProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "EnergyProperty" : {
+      "@id" : "https://w3id.org/def/wsis/EnergyProperty"
+    },
+    "KeyPerformanceIndicatorAssessment" : {
+      "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment"
+    },
+    "quantifiesKPI" : {
+      "@id" : "https://saref.etsi.org/saref4city/quantifiesKPI",
+      "@type" : "@id"
+    },
+    "Technology" : {
+      "@id" : "https://w3id.org/def/wsis/Technology"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "TemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalDuration"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "Material" : {
+      "@id" : "https://w3id.org/def/wsis/Material"
+    },
+    "AcceptabilityProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "hasCalculationPeriod" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasCalculationPeriod",
+      "@type" : "@id"
+    },
+    "canProcess" : {
+      "@id" : "https://w3id.org/def/wsis/canProcess",
+      "@type" : "@id"
+    },
+    "hasExpirationDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasExpirationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasName" : {
+      "@id" : "https://saref.etsi.org/core/hasName"
+    },
+    "asWKT" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asWKT"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "ResourceConsumption" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceConsumption"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core/hasValue"
+    },
+    "IndustryCluster" : {
+      "@id" : "https://w3id.org/def/wsis/IndustryCluster"
+    },
+    "ResourceConsumer" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceConsumer"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+      "@type" : "@id"
+    },
+    "hasOwner" : {
+      "@id" : "https://w3id.org/def/wsis/hasOwner"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isPartOf" : {
+      "@id" : "https://w3id.org/def/wsis/isPartOf",
+      "@type" : "@id"
+    },
+    "qualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core/Measurement"
+    },
+    "KeyPerformanceIndicatorLevel" : {
+      "@id" : "https://w3id.org/def/wsis/KeyPerformanceIndicatorLevel"
+    },
+    "BacterialProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/BacterialProperty"
+    },
+    "ResourceOutput" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceOutput"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core/hasProperty",
+      "@type" : "@id"
+    },
+    "MaterialProperty" : {
+      "@id" : "https://w3id.org/def/wsis/MaterialProperty"
+    },
+    "Air" : {
+      "@id" : "https://w3id.org/def/wsis/Air"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "hasKPILevel" : {
+      "@id" : "https://w3id.org/def/wsis/hasKPILevel",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "https://saref.etsi.org/saref4city/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Energy" : {
+      "@id" : "https://w3id.org/def/wsis/Energy"
+    },
+    "Water" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Water"
+    },
+    "hasProcess" : {
+      "@id" : "https://w3id.org/def/wsis/hasProcess",
+      "@type" : "@id"
+    },
+    "SolidMaterial" : {
+      "@id" : "https://w3id.org/def/wsis/SolidMaterial"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "generates" : {
+      "@id" : "https://w3id.org/def/wsis/generates",
+      "@type" : "@id"
+    },
+    "SemiSolidMaterial" : {
+      "@id" : "https://w3id.org/def/wsis/SemiSolidMaterial"
+    },
+    "isMeasurementOf" : {
+      "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+      "@type" : "@id"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.opengis.net/ont/sf#Point"
+    },
+    "KeyPerformanceIndicator" : {
+      "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "sfContains" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "hasPhenomenonTime" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasPhenomenonTime",
+      "@type" : "@id"
+    },
+    "MesoLevelIndicator" : {
+      "@id" : "https://w3id.org/def/wsis/MesoLevelIndicator"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "AirProperty" : {
+      "@id" : "https://w3id.org/def/wsis/AirProperty"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "PrefixedGramPerLitre" : {
+      "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/PrefixedGramPerLitre"
+    },
+    "RawWater" : {
+      "@id" : "https://w3id.org/def/wsis/RawWater"
+    },
+    "ResourceUtilization" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceUtilization"
+    },
+    "hasLastUpdateDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasLastUpdateDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "isAssessedBy" : {
+      "@id" : "https://saref.etsi.org/saref4city/isAssessedBy",
+      "@type" : "@id"
+    },
+    "hasCreationDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasCreationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "usesTechnology" : {
+      "@id" : "https://w3id.org/def/wsis/usesTechnology",
+      "@type" : "@id"
+    },
+    "Process" : {
+      "@id" : "https://w3id.org/def/wsis/Process"
+    },
+    "hasKPI" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasKPI",
+      "@type" : "@id"
+    },
+    "ResourceDisposal" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceDisposal"
+    },
+    "Resource" : {
+      "@id" : "https://w3id.org/def/wsis/Resource"
+    },
+    "refersToTime" : {
+      "@id" : "https://saref.etsi.org/saref4city/refersToTime",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProperty",
+      "@type" : "@id"
+    },
+    "isIntendedFor" : {
+      "@id" : "https://saref.etsi.org/saref4watr/isIntendedFor",
+      "@type" : "@id"
+    },
+    "hasMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasMeasurement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#comment"
+    },
+    "isKPIOf" : {
+      "@id" : "https://saref.etsi.org/saref4city/isKPIOf",
+      "@type" : "@id"
+    },
+    "isKPILevel" : {
+      "@id" : "https://w3id.org/def/wsis/isKPILevel",
+      "@type" : "@id"
+    },
+    "Polygon" : {
+      "@id" : "http://www.opengis.net/ont/sf#Polygon"
+    },
+    "isDesignedFor" : {
+      "@id" : "https://saref.etsi.org/saref4watr/isDesignedFor",
+      "@type" : "@id"
+    },
+    "ResourceProducer" : {
+      "@id" : "https://w3id.org/def/wsis/ResourceProducer"
+    },
+    "MicroLevelIndicator" : {
+      "@id" : "https://w3id.org/def/wsis/MicroLevelIndicator"
+    },
+    "hasDescription" : {
+      "@id" : "https://saref.etsi.org/core/hasDescription"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimestamp"
+    },
+    "MicrobialProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/MicrobialProperty"
+    },
+    "WaterProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+    },
+    "Salt" : {
+      "@id" : "https://w3id.org/def/wsis/Salt"
+    },
+    "EnvironmentalImpacts" : {
+      "@id" : "https://w3id.org/def/wsis/EnvironmentalImpacts"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "assesses" : {
+      "@id" : "https://saref.etsi.org/saref4city/assesses",
+      "@type" : "@id"
+    },
+    "MacroLevelIndicator" : {
+      "@id" : "https://w3id.org/def/wsis/MacroLevelIndicator"
+    }
+  }
+}
